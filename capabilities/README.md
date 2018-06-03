@@ -1,6 +1,6 @@
-# Linux Capacities
+# Linux Capabilities
 
-A service **MUST** list the Linux capacities that are required for the service to properly operate.
+A service **MUST** list the [Linux capabilities](http://man7.org/linux/man-pages/man7/capabilities.7.html) that are required for the service to properly operate.
 
 ```yaml
 cap:
