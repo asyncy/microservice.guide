@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microservice.guide/microservice.guide.git"
+    "url": "git+https://github.com/microservice-guide/microservice.guide.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/microservice.guide/microservice.guide/issues"
+    "url": "https://github.com/microservice-guide/microservice.guide/issues"
   },
-  "homepage": "https://github.com/microservice.guide/microservice.guide#readme",
+  "homepage": "https://github.com/microservice-guide/microservice.guide#readme",
   "devDependencies": {
     "markdown-it-highlightjs": "^3.0.0",
     "vuepress": "github:vuejs/vuepress"

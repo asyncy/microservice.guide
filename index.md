@@ -26,7 +26,7 @@ Below are products and companies that uphold the standards defined in Microservi
 
 [![Asyncy](https://avatars0.githubusercontent.com/u/34162468?s=100&v=4 "Asyncy")](https://asyncy.com)
 
-> Add your company or product. Contact us below or make a [pull request](https://github.com/microservice.guide/microservice.guide).
+> Add your company or product. Contact us below or make a [pull request](https://github.com/microservice-guide/microservice.guide).
 
 ## Contact
 
