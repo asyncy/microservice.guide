@@ -30,7 +30,8 @@ module.exports = {
         title: 'Examples',
         collapsable: false,
         children: [
-          '/http/'
+          '/http/',
+          '/examples/http/streaming/'
         ]
       },
       {
