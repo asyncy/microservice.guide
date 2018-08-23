@@ -39,7 +39,7 @@ Arguments **MUST** provide a data type.
 | `list`    | JSON            |
 | `object`  | JSON            |
 | `boolean` | `true`, `false` |
-| `path`    | literal         |
+| `map`     | JSON            |
 
 ## Arguments
 
