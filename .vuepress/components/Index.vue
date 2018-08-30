@@ -16,11 +16,6 @@
 </script>
 
 <style>
-
-body {
-    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-}
-
 .container {
     padding-left: 55px;
     padding-right: 55px;
