@@ -6,7 +6,7 @@
                 Have feedback, questions or would like to support OMG. </br>
                 Please drop your email in below.
             </p>
-            <form name="contact" method="POST" netlify>
+            <form name="contact" method="POST">
                 <p>
                     <input type="email" style="font-size:1.2em" name="email">
                 </p>
