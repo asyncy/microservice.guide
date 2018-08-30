@@ -5,7 +5,6 @@
     <Feature/>
     <SubmitFeedback/>
     <Footer />
-    <Content/>
   </div>
 </template>
 
