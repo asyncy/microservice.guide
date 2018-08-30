@@ -1,0 +1,43 @@
+<svg id="footer_graphic" data-name="footer graphic" xmlns="http://www.w3.org/2000/svg" width="699.87" height="858.94" viewBox="0 0 699.87 858.94">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #00ff7e;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        stroke-width: 2px;
+        stroke-dasharray: 8 4;
+      }
+
+      .cls-2, .cls-3 {
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g>
+    <circle id="Ellipse_1_copy_10" data-name="Ellipse 1 copy 10" class="cls-1" cx="700.54" cy="173.66" r="76.83"/>
+    <circle id="Ellipse_1_copy_10-2" data-name="Ellipse 1 copy 10" class="cls-1" cx="700.56" cy="173.66" r="122.94"/>
+    <path id="Rectangle_3_copy_4" data-name="Rectangle 3 copy 4" class="cls-2" d="M2656.87,3807.74V3493.53" transform="translate(-1956.13 -3477.03)"/>
+    <path id="Rectangle_3_copy_4-2" data-name="Rectangle 3 copy 4" class="cls-2" d="M2127,3650l687.01,0.87" transform="translate(-1956.13 -3477.03)"/>
+  </g>
+  <g>
+    <path id="Rectangle_3_copy_4-3" data-name="Rectangle 3 copy 4" class="cls-2" d="M2250.54,4333.24l545.86-544.57" transform="translate(-1956.13 -3477.03)"/>
+    <path id="Rectangle_3_copy_4-4" data-name="Rectangle 3 copy 4" class="cls-2" d="M2794,4068.68l-591.27-590.95" transform="translate(-1956.13 -3477.03)"/>
+    <path class="cls-3" d="M2531.68,3806.96h246.4v245.82h-246.4V3806.96Z" transform="translate(-1956.13 -3477.03)"/>
+    <path id="Rectangle_6_copy" data-name="Rectangle 6 copy" class="cls-3" d="M2577.93,3853.13h153.9v153.48h-153.9V3853.13Z" transform="translate(-1956.13 -3477.03)"/>
+  </g>
+  <g>
+    <circle id="Ellipse_1_copy_24" data-name="Ellipse 1 copy 24" class="cls-1" cx="699.525" cy="731.705" r="122.935"/>
+    <path id="Ellipse_1_copy_24-2" data-name="Ellipse 1 copy 24" class="cls-3" d="M2655.63,4132a76.71,76.71,0,1,1-76.84,76.71A76.771,76.771,0,0,1,2655.63,4132Z" transform="translate(-1956.13 -3477.03)"/>
+    <path id="Rectangle_3_copy_6" data-name="Rectangle 3 copy 6" class="cls-2" d="M2003.54,4333.24L2531,3807" transform="translate(-1956.13 -3477.03)"/>
+    <path id="Rectangle_3_copy_6-2" data-name="Rectangle 3 copy 6" class="cls-2" d="M2531,4053l-575.27-575.27" transform="translate(-1956.13 -3477.03)"/>
+    <path id="Rectangle_3_copy_6-3" data-name="Rectangle 3 copy 6" class="cls-2" d="M2126.61,4209.28L2685,4209" transform="translate(-1956.13 -3477.03)"/>
+    <path id="Rectangle_3_copy_4-5" data-name="Rectangle 3 copy 4" class="cls-2" d="M2529.23,4335.27l238.06-237.45" transform="translate(-1956.13 -3477.03)"/>
+  </g>
+</svg>

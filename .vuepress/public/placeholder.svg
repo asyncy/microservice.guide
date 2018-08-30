@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="112" viewBox="0 0 112 112">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #00ff7e;
+        stroke-width: 12px;
+      }
+    </style>
+  </defs>
+  <circle id="icon_placeholder" data-name="icon placeholder" class="cls-1" cx="56" cy="56" r="50"/>
+</svg>

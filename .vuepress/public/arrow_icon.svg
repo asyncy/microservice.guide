@@ -1,0 +1,14 @@
+<svg id="arrow_icon" data-name="arrow icon" xmlns="http://www.w3.org/2000/svg" width="16.53" height="14.875" viewBox="0 0 16.53 14.875">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #00ff7e;
+        stroke-width: 2px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M1200.28,740.774l6.71,6.726-6.71,6.726" transform="translate(-1191.88 -740.063)"/>
+  <path id="Rectangle_9_copy" data-name="Rectangle 9 copy" class="cls-1" d="M1191.87,747.5h15.12" transform="translate(-1191.88 -740.063)"/>
+</svg>

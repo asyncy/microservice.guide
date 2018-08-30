@@ -1,0 +1,47 @@
+<svg id="OMG_logo" data-name="OMG logo" xmlns="http://www.w3.org/2000/svg" width="1131.28" height="392" viewBox="0 0 1131.28 392">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        fill: none;
+        stroke: #00ff7e;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-3 {
+        stroke-width: 2px;
+        stroke-dasharray: 8 4;
+      }
+
+      .cls-4, .cls-5 {
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <g>
+    <path id="Ellipse_1_copy_10" data-name="Ellipse 1 copy 10" class="cls-1" d="M197.422,98.125a96.438,96.438,0,1,1-96.36,96.437A96.4,96.4,0,0,1,197.422,98.125Z"/>
+    <circle id="Ellipse_1_copy_10-2" data-name="Ellipse 1 copy 10" class="cls-2" cx="197.422" cy="194.578" r="154.172"/>
+    <path id="Rectangle_3_copy_4" data-name="Rectangle 3 copy 4" class="cls-3" d="M197.645,392V-3"/>
+    <path id="Rectangle_3_copy_4-2" data-name="Rectangle 3 copy 4" class="cls-3" d="M0,194.793H394.7"/>
+  </g>
+  <g>
+    <path id="Rectangle_3_copy_4-3" data-name="Rectangle 3 copy 4" class="cls-3" d="M398,369L750,17"/>
+    <path id="Rectangle_3_copy_4-4" data-name="Rectangle 3 copy 4" class="cls-3" d="M747,369L396,18"/>
+    <path class="cls-4" d="M418,40H727V349H418V40Z"/>
+    <path id="Rectangle_6_copy" data-name="Rectangle 6 copy" class="cls-4" d="M476,98H669V291H476V98Z"/>
+    <path class="cls-1" d="M727,349l1-311L572,194,419,40l-1,309h58V181l96,95,97-97V349h58Z"/>
+  </g>
+  <g>
+    <path id="Ellipse_1_copy_24" data-name="Ellipse 1 copy 24" class="cls-4" d="M936.078,40.281c85.142,0,154.172,69.081,154.172,154.3s-69.03,154.3-154.172,154.3-154.172-69.081-154.172-154.3S850.931,40.281,936.078,40.281Z"/>
+    <circle id="Ellipse_1_copy_24-2" data-name="Ellipse 1 copy 24" class="cls-5" cx="936.08" cy="194.563" r="96.361"/>
+    <path id="Ellipse_1_copy_10-3" data-name="Ellipse 1 copy 10" class="cls-1" d="M1087.49,164.306A154.107,154.107,0,0,1,827.544,303.68c-60.11-60.212-60.074-157.87.082-218.127a153.8,153.8,0,0,1,217.764-.082c-18.65,18.648-27.88,27.944-40.85,40.914a96.464,96.464,0,1,0,23.49,97.861H936V165S1050.38,164.306,1087.49,164.306Z"/>
+    <path id="Rectangle_3_copy_4-5" data-name="Rectangle 3 copy 4" class="cls-3" d="M739.3,194.793H1134"/>
+    <path id="Rectangle_3_copy_4-6" data-name="Rectangle 3 copy 4" class="cls-3" d="M796.982,334.447L1076.08,55.14"/>
+  </g>
+</svg>

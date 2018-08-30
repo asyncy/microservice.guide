@@ -18,6 +18,7 @@
   "homepage": "https://github.com/microservices/microservice.guide#readme",
   "devDependencies": {
     "markdown-it-highlightjs": "^3.0.0",
-    "vuepress": "0.10.0"
-  }
+    "vuepress": "^0.14.2"
+  },
+  "dependencies": {}
 }
