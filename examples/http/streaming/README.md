@@ -1,7 +1,7 @@
 # Event-driven HTTP Service
 
 Building an event-driven HTTP service involves the following:
-1. Expose an HTTP endpoint when a container is started
+1. Expose a HTTP endpoint when a container is started
 2. Accept subscription requests
 3. Deliver events via the subscription metadata provided in (2) above
 
@@ -10,40 +10,52 @@ In this example, let's build a simple pub/sub service.
 ## Handling event subscription
 In microservice.yml:
 ```yaml
+version: 1
+lifecycle:
+  startup:
+    command: ["node", "app.js"]
 commands:
-  subscribe:
-    run:
-      port: 5000
+  listen:
     events:
       help: Subscribe to events
       event:
+        http:
+          port: 5000
+          subscribe:
+            path: /subscribe
+            method: post
+            contentType: application/json
+          unsubscribe:
+            path: /unsubscribe
+            method: delete
+            contentType: application/json
         arguments:
           name:
             type: string
-            required: true        
-      http:
-        method: get
-        endpoint: /subscribe
+            in: requestBody
+            required: true
   publish:
-    help: Publish an event
+    help: Publish an event to your service
     arguments:
-      event:
+      eventName:
         type: string
-        location: body
+        in: requestBody
         required: true  
       data:
         type: map
-        location: body
+        in: requestBody
         required: true
     http:
+      port: 5000
       method: post
-      endpoint: /publish
+      contentType: application/json
+      path: /publish
 ```
 
 To publish an event, the HTTP call made by the Platform to the service will be:
 ```sh
 curl -X POST \ 
-     -d '{"event": "foo", "data": {"foo": "bar"}}' \ 
+     -d '{"eventName": "foo", "data": {"foo": "bar"}}' \ 
      -H 'Content-Type: application/json; charset=utf-8' \ 
      http://service:5000/publish
 ```
@@ -52,7 +64,8 @@ When the Platform wants to subscribe to an event emitted from the service, the
 Platform will make the following HTTP request:
 ```sh
 curl -X POST \ 
-     -d '{"endpoint": "http://platform:8000/foo/bar/event", "data": {"name": "foo"}}' \ 
+     -d '{"endpoint": "http://platform:8000/foo/bar/event", \ 
+          "id": "subscription uuid", "data": {"name": "foo", "id": "uuid"}}' \ 
      -H 'Content-Type: application/json; charset=utf-8' \ 
      http://service:5000/subscribe
 ```
