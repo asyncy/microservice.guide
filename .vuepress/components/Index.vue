@@ -3,6 +3,7 @@
     <Dashboard/>
     <Explanation/>
     <Feature/>
+    <SubmitFeedback/>
     <Footer />
   </div>
 </template>

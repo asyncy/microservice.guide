@@ -6,15 +6,6 @@
                 Have feedback, questions or would like to support OMG. </br>
                 Please drop your email in below.
             </p>
-            <form name="contact" method="POST" netlify>
-                <div>
-                    <input type="email" style="font-size:1.25em" name="email">
-                </div>
-                <div>
-                    <textarea name="message" rows="4" cols="50"></textarea>
-                </div>
-                <button class="round-button" type="submit">Send</button>
-            </form>
         </div>
         <div class="feedback-img"></div>
     </div>
