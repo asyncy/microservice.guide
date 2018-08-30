@@ -1,6 +1,5 @@
 <template>
   <div class="wrapper">
-    <Dashboard/>
     <Explanation/>
     <Feature/>
     <SubmitFeedback/>
