@@ -7,13 +7,15 @@
                 Please drop your email in below.
             </p>
             <form name="contact" method="POST" data-netlify="true">
-                <div>
-                    <input type="email" style="font-size:1.25em" name="email">
-                </div>
-                <div>
+                <p>
+                    <input type="email" style="font-size:1.2em" name="email">
+                </p>
+                <p>
                     <textarea name="message" rows="4" cols="50"></textarea>
-                </div>
-                <button class="round-button" type="submit">Send</button>
+                </p>
+                <p>
+                    <button class="round-button" type="submit">Send</button>
+                </p> 
             </form>
         </div>
         <div class="feedback-img"></div>
@@ -29,7 +31,7 @@
     .feedback {
         position: relative;
         background: #111420;
-        padding: 40px 0px 70px 0px;
+        padding: 40px 0px 60px 0px;
     }
     
     .feedback input,
@@ -39,12 +41,14 @@
         background: transparent;
         outline: none;
         padding: 4px 15px;
-        margin-bottom: 20px;
     }
     
-    .feedback h1,
-    p {
+    .feedback h1,p
+    {
         margin-bottom: 30px;
+    }
+    .feedback form p {
+        margin-bottom: 15px;
     }
     
     .feedback-img {
