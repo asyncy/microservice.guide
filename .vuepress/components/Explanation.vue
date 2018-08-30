@@ -12,15 +12,12 @@
   }
 </script>
 
-<style>
-.explaination {
-  padding-top: 65px;
-  padding-bottom: 55px;
-}
-.why-omg {
-  margin-bottom: 30px;
-}
-.explaination p {
-  margin-bottom: 25px;
-}
+<style lang="stylus">
+.explaination 
+  padding-top 65px
+  padding-bottom 55px
+  p 
+    margin-bottom 25px
+.why-omg 
+  margin-bottom 30px
 </style>

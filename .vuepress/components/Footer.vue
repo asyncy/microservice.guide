@@ -9,10 +9,9 @@
   }
 </script>
 
-<style>
-.footer {
-  background: #1c1e2a;
-  padding:20px 0px 60px 0px;
-  color: white;
-}
+<style lang="stylus">
+.footer 
+  background #1c1e2a
+  padding 20px 0px 60px 0px
+  color white
 </style>

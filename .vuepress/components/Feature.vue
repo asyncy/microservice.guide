@@ -30,27 +30,22 @@
   }
 </script>
 
-<style scoped>
-    .feature {
-        background: #f2f4f6;
-        font-size: 14px;
-    }
-    .feature div.container {
-        padding-top: 65px;
-        padding-bottom: 55px;
-    }
-    .feature h4 {
-        font-weight: bold;
-        font-size: 19px;
-        margin: 15px 0px 15px 0px;
-    }
-    
-    .f-circle {
-        width: 60px;
-        height: 60px;
-        background-image: url('/placeholder.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
+<style lang="stylus" scoped>
+.feature 
+    background #f2f4f6
+    font-size 14px
+  div.container
+    padding-top 65px
+    padding-bottom 55px
+  h4 
+    font-weight bold
+    font-size 19px
+    margin 15px 0px 15px 0px
+.f-circle 
+    width 60px
+    height 60px
+    background-image url('/placeholder.svg')
+    background-position center
+    background-repeat no-repeat
+    background-size cover
 </style>
