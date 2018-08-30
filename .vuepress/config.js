@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Open Microservice Guide',
-  description: 'The open standard for resusable microservices',
+  description: 'The open standard for reusable microservices',
   themeConfig: {
     repo: 'microservices/microservice.guide',
     repoLabel: 'Edit in GitHub',
@@ -30,7 +30,8 @@ module.exports = {
         title: 'Examples',
         collapsable: false,
         children: [
-          '/http/'
+          '/http/',
+          '/examples/http/streaming/'
         ]
       },
       {
