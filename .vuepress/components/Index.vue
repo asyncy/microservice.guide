@@ -1,9 +1,6 @@
 <template>
   <div class="wrapper">
-    <Explanation/>
-    <Feature/>
-    <SubmitFeedback/>
-    <Footer />
+
   </div>
 </template>
 
