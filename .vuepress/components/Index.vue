@@ -1,6 +1,9 @@
 <template>
   <div class="wrapper">
-
+    <Dashboard/>
+    <Explanation/>
+    <Feature/>
+    <Footer />
   </div>
 </template>
 
