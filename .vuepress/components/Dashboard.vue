@@ -2,7 +2,7 @@
   <div class="dash-background">
     <div class="header">
       <div class="pull-left">
-        <SearchBox></SearchBox>
+        <CustomSearchBox />
       </div>
       <div class="pull-right" @click="openGithub()">
         <div class="github-img pull-left"></div>

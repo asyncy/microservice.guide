@@ -1,5 +1,5 @@
 <template>
-  <div class="search-box">
+  <div class="custom-search-box">
     <input
       @input="query = $event.target.value"
       aria-label="Search"
@@ -15,13 +15,13 @@
       @keyup.down="onDown"
     >
     <ul
-      class="suggestions"
+      class="custom-suggestions"
       v-if="showSuggestions"
       :class="{ 'align-right': alignRight }"
       @mouseleave="unfocus"
     >
       <li
-        class="suggestion"
+        class="custom-suggestion"
         v-for="(s, i) in suggestions"
         :class="{ focused: i === focusIndex }"
         @mousedown="go(i)"
@@ -155,7 +155,7 @@ export default {
 <style lang="stylus">
 @import '../config.styl'
 
-.search-box
+.custom-search-box
   display inline-block
   position relative
   margin-right 1rem
@@ -176,7 +176,7 @@ export default {
     &:focus
       cursor auto
       border-color $accentColor
-  .suggestions
+  .custom-suggestions
     background #fff
     width 20rem
     position absolute
@@ -187,7 +187,7 @@ export default {
     list-style-type none
     &.align-right
       right 0
-  .suggestion
+  .custom-suggestion
     line-height 1.4
     padding 0.4rem 0.6rem
     border-radius 4px
@@ -206,7 +206,7 @@ export default {
         color $accentColor
 
 @media (max-width: $MQNarrow)
-  .search-box
+  .custom-search-box
     input
       cursor pointer
       width 0
@@ -218,21 +218,21 @@ export default {
         width 20rem
 
 @media (max-width: $MQNarrow) and (min-width: $MQMobile)
-  .search-box
-    .suggestions
+  .custom-search-box
+    .custom-suggestions
       left 0
 
 @media (max-width: $MQMobile)
-  .search-box
+  .custom-search-box
     margin-right 0
     input
       left 1rem
-    .suggestions
+    .custom-suggestions
       right 0
 
 @media (max-width: $MQMobileNarrow)
-  .search-box
-    .suggestions
+  .custom-search-box
+    .custom-suggestions
       width calc(100vw - 4rem)
     input:focus
       width 8rem

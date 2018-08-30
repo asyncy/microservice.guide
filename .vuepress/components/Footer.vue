@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-      <h4 class="f-text">{{ $site.themeConfig.footer }}</h4>
+      <h4 class="text-center">{{ $site.themeConfig.footer }}</h4>
   </div>
 </template>
 
@@ -14,8 +14,5 @@
   background: #1c1e2a;
   padding:20px 0px 60px 0px;
   color: white;
-}
-.f-text {
-  text-align:center;
 }
 </style>
