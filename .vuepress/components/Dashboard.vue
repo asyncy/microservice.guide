@@ -183,6 +183,9 @@
       width 12rem
     .github-area span 
       display none
+    .search-box
+      .suggestions
+        left 1rem!important
   .header-graphic 
     display none!important
   #ms-guide h1
