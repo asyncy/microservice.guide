@@ -173,12 +173,15 @@
     .header
       padding: 1rem 2.5rem 0 1rem
     .omg-area
+      top 20%
       .flex-container
         flex-direction column!important
       .omg-img
         width 15rem
         height 5rem
         margin-bottom 1rem
+    .microservice
+      margin-left: 0rem
     .search-box input
       width 12rem
     .github-area span 
