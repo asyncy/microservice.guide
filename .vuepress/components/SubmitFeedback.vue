@@ -61,5 +61,5 @@
         display none
 @media (max-width: $SCMobileNarrow)
     input,textarea
-        max-width: 90%
+        max-width: 75%
 </style>
