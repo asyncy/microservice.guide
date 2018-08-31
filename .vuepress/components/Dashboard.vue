@@ -64,13 +64,13 @@
   color white
   .header 
     padding 3.5rem 4.5rem 0 4.5rem
-    font-size 12px
-    cursor pointer
+    font-size 12px   
   .github-area 
     float:right
     display: flex
     font-size 1.1rem
     padding: 0.5rem 0
+    cursor pointer
     .github-img 
       width 1.5rem
       height $lnSize
@@ -94,14 +94,15 @@
     background-size cover
     margin-top 0.3rem
     margin-left 0.6rem
-  .search-box input
-    width 20rem
-    font-size $lnSize
-    padding-left 2.6rem
-    line-height 2.4rem
-    border-color #41434d
-    background transparent url(/search_icon.svg) 1rem 0.7rem no-repeat!important
-    background-size 1rem!important
+  .search-box
+    z-index:100
+    input
+      width 20rem
+      font-size $lnSize
+      padding-left 2.6rem
+      line-height 2.4rem
+      border-color #41434d
+      background transparent url(/search_icon.svg) 1rem 0.7rem no-repeat!important    
   .header-graphic 
     position absolute
     right 0px
