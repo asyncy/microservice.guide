@@ -59,7 +59,9 @@
   .feedback
     .feedback-img 
         display none
+   input,textarea
+     max-width 20rem
 @media (max-width: $SCMobileNarrow)
     input,textarea
-        max-width: 75%
+        max-width 15rem
 </style>
