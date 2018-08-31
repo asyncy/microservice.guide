@@ -1,5 +1,5 @@
 ---
 home: true
-layout: Index
+layout: HomePage
 navbar: false
 ---

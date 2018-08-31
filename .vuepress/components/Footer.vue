@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-      <h4 class="text-center">{{ $site.themeConfig.footer }}</h4>
+    {{ $site.themeConfig.footer }}
   </div>
 </template>
 
@@ -12,6 +12,8 @@
 <style lang="stylus">
 .footer 
   background #1c1e2a
-  padding 20px 0px 60px 0px
   color white
+  font-size 1.8rem
+  line-height 6rem
+  text-align center
 </style>

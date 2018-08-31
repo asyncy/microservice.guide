@@ -1,9 +1,6 @@
 module.exports = {
   title: 'Open Microservice Guide',
   description: 'The open standard for resusable microservices',
-  head:[
-    ['link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' }]
-  ],
   themeConfig: {
     repo: 'microservices/microservice.guide',
     footer: "MIT Licensed",
