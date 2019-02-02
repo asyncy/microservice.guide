@@ -9,10 +9,10 @@
       <p>Platforms the execute OMG Compliant services can interact with all services.</p>
 
       <h3>III. Any Interface</h3>
-      <p>The service may interface with HTTP, RPC or Exec (`docker run` or `rkt run`)</p>
+      <p>The service may choose their communication interface freely.</p>
 
       <h3>IV. Containerized</h3>
-      <p>Services must be containerized for portability; Docker, rkt, or OpenFaaS.</p>
+      <p>Services must be containerized for portability.</p>
 
       <h3>V. Domain Specific</h3>
       <p>Specialized and encapsulating the full API of the domain; include metrics, logs and lifecycle.</p>
@@ -24,14 +24,16 @@
       <p>Services must list all <code>actions</code> including all the <code>arguments</code> and <code>output</code> of the action.</p>
 
       <h3>VIII. Stateless</h3>
-      <p>??</p>
+      <p>Services must be stateless.</p>
 
       <h3>IX. Use CloudEvents</h3>
       <p><a href="https://cloudevents.io/">CloudEvents</a> provides a specification for describing event data in a common way.</p>
       
-      <h3>X. ??</h3>
+      <h3>X. Health, metrics, and logs.</h3>
+      <p>Service must report health, metrics, and logs to a common location.</p>
       
-      <h3>XI. ??</h3>
+      <h3>XI. Independant.</h3>
+      <p>No coupling. Services can run isolated for testing.</p>
 
       <h3>XII. ??</h3>
       
