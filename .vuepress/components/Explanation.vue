@@ -1,6 +1,8 @@
 <template>
   <div class="wrap-content">
-      <h1>The 12 Factor Microservice</h1>
+      <h1>The Tweleve-Factor Microservice</h1>
+      <p><small>Inspired by <a href="https://12factor.net/">The Twelve-Factor App</a></small></p>
+      
       <h3>I. Language-Agnostic</h3>
       <p>Services can be written in any programming language.</p>
 
