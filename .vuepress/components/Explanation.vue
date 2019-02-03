@@ -5,11 +5,11 @@
       <p>Services can be written in any programming language.</p>
 
       <h3>II. Vendor-Neutral</h3>
-      <p>Services must not be tied to one platform.</p>
-      <p>Platforms the execute OMG Compliant services can interact with all services.</p>
+      <p>Services must not be tied to one platform.
+         <br>Platforms the execute OMG Compliant services can interact with all services.</p>
 
       <h3>III. Any Interface</h3>
-      <p>The service may choose their communication interface freely.</p>
+      <p>The service can freely choose their <a href="/schema/interface/">communication interface</a>.</p>
 
       <h3>IV. Containerized</h3>
       <p>Services must be containerized for portability.</p>
@@ -18,25 +18,26 @@
       <p>Specialized and encapsulating the full API of the domain; include metrics, logs and lifecycle.</p>
 
       <h3>VI. Actionable Documentation</h3>
-      <p>This is where the OMG shines. Documentation can be auto-generated and actionable through the <code>microservice.yml</code>.</p>
+      <p>Documentation is generated and actionable through the <a href="/overview/anatomy/"><code>microservice.yml</code></a>.</p>
 
-      <h3>VII. One service. Many actions.</h3>
-      <p>Services must list all <code>actions</code> including all the <code>arguments</code> and <code>output</code> of the action.</p>
+      <h3>VII. Declarative.</h3>
+      <p>Services must list all <a href="/schema/actions/"><code>actions</code></a> including the <code>arguments</code> and <code>output</code>.</p>
 
       <h3>VIII. Stateless</h3>
       <p>Services must be stateless.</p>
 
-      <h3>IX. Use CloudEvents</h3>
-      <p><a href="https://cloudevents.io/">CloudEvents</a> provides a specification for describing event data in a common way.</p>
+      <h3>IX. CloudEvents</h3>
+      <p>A specification for describing <a href="/schema/events/">event data</a> in a common way.</p>
       
       <h3>X. Health, metrics, and logs.</h3>
-      <p>Service must report health, metrics, and logs to a common location.</p>
+      <p>Service must report <a href="/schema/health/">health</a>, <a href="/schema/metrics/">metrics</a>, and <a href="/schema/logs/">logs</a> to a common location.</p>
       
       <h3>XI. Independant.</h3>
-      <p>No coupling. Services can run isolated for testing.</p>
+      <p>Services may not couple with other services.</p>
 
-      <h3>XII. ??</h3>
-      
+      <h3>XII. Config.</h3>
+      <p>Services may document <a href="/schema/environment/">configuration</a> needed to perform.</p>
+
   </div>
   <div class="wrap-content">
       <h1>Why OMG?</h1>
