@@ -39,7 +39,7 @@ export default {
       window.open('https://github.com/microservices/microservice.guide')
     },
     getStarted () {
-      this.$router.push('/overview/')
+      this.$router.push('/introduction/overview/')
     }
   }
 }

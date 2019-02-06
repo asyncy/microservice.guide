@@ -14,9 +14,9 @@ module.exports = {
         title: 'Introduction',
         collapsable: false,
         children: [
-          '/overview/',
-          '/overview/comparisons/openapi/',
-          '/overview/anatomy/'
+          '/introduction/overview/',
+          '/introduction/comparisons/openapi/',
+          '/introduction/anatomy/'
         ]
       },
       {
