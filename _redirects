@@ -1,2 +1,8 @@
 # Redirect domain aliases to primary domain
 https://microservices.guide/* https://microservice.guide/:splat 301!
+
+# Redirect old introduction structure to new one
+https://microservices.guide/overview/ https://microservices.guide/introduction/overview/
+https://microservices.guide/overview/comparisons/openapi/ https://microservices.guide/introduction/comparisons/openapi/
+https://microservices.guide/overview/anatomy/ https://microservices.guide/introduction/anatomy/
+
