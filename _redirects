@@ -2,7 +2,6 @@
 https://microservices.guide/* https://microservice.guide/:splat 301!
 
 # Redirect old introduction structure to new one
-/overview/ /introduction/overview/
-/overview/comparisons/openapi/ /introduction/comparisons/openapi/
-/overview/anatomy/ /introduction/anatomy/
-
+/overview /introduction/overview
+/overview/comparisons/openapi /introduction/comparisons/openapi
+/overview/anatomy /introduction/anatomy
