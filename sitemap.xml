@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+
+<url>
+  <loc>https://microservice.guide/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/introduction/overview/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/introduction/comparisons/openapi/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/introduction/anatomy/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/info/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/lifecycle/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/actions/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/events/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/interface/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/environment/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/volumes/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/authentication/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/health/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/requirements/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/metrics/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/schema/logs/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/examples/http/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/examples/http/pubsub/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/cli/overview/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/cli/validate/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/cli/test/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microservice.guide/cli/debug/</loc>
+  <lastmod>2019-02-07T17:41:37+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
