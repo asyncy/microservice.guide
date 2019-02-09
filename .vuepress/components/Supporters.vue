@@ -1,3 +1,4 @@
+<!--
 <template>
   <div class="wrap-content">
       <h1>OMG Supporters</h1>
@@ -18,6 +19,7 @@
       </div>
   </div>
 </template>
+-->
 
 <script>
   export default {
@@ -38,11 +40,11 @@
 
 <style lang="stylus" scoped>
   @import "../config.styl"
-  
+
   div.wrap-content
     padding 4rem 0 5rem 0
     font-size $lnSize
-  p 
+  p
     margin-bottom 2rem
     line-height 2.4rem
   h1

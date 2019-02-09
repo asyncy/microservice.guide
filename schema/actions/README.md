@@ -1,122 +1,131 @@
 # Actions
-Defining actions is a way to organize which APIs are exposed 
-and how they are used within an application or platform.
 
-Properly defining actions can assist with the following:
-  - Service discovery
-  - Documentation
-  - Operational insight
+::: tip Important
+Services **MUST** list all actions; exposing the functionality of the service.
+:::
 
-Services **MUST** list actions that can be executed.
-
-At a high level, services **SHOULD** define the following about themselves:
-
-- Interface
-- Arguments
-- Output 
+Actions describe the APIs, functions and logic within the microservice. Each action includes the `arguments` and `output` that correspond with the behavior of the action.
 
 
-**Sample**
+### Example
 
-```yaml {4-5}
+Below is an action called `convert` which accepts `units`, `from` and `to` returning an object with properies of `units` and `currency`.
+
+```yaml
 actions:
   convert:
     help: Convert a currency into another currency
-    http:  # choose: http, format, rpc
+    http:  # defining how to execute this action
       ...
     arguments:
       units:
         type: number
-        in: query
-        required: true
       from:
         type: string
-        in: query
-        required: true
       to:
         type: string
-        in: query
-        required: true
     output:
       type: object
-      contentType: application/json
       properties:
         units:
           type: number
         currency:
           type: string
-    
 ```
-Within a named action, the following fields are available:
+
+
+Within a named `action`, the following fields are available:
 
 <json-table>
 <p>
 {
     "help": {
-        "desc": "A human friendly description for this action"    
-    }, 
-    "http": {
-        "desc": "[Read more](/schema/interface/#http)"
-    },
-    "format": {
-        "desc": "[Read more](/schema/interface/#command)"
-    },
-    "rpc": {
-        "desc": "[Read more](/schema/interface/#rpc)"
+        "desc": "A human friendly description for this action",
+        "required": true
     },
     "arguments": {
-        "desc": "An action **MAY** have named arguments. Each argument, may have the following information about them",
-        "$block": {
-            "help": {
-                "desc": "Arguments **SHOULD** provide a short description of the argument which can provide clarity to end users."
-            },
-            "type": {
-                "desc": "The type of this argument. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `enum`",
-                "required": true
-            },
-            "in": {
-                "desc": "The location of this argument. Each execution strategy provides different possible values for this. Possible values are `requestBody`, `query`, and `path`",
-                "required": true
-            },
-            "required": {
-                "desc": "Whether this argument is required or not. The default value for this is false"
-            } 
-        }
+        "desc": "Optional and required inputs the action has. [Read more](#arguments)",
+        "required": true
     },
     "output": {
-        "desc": "If your action returns data, it's output **SHOULD** be described here",
-        "$block": {
-            "type": {
-                "desc": "The type of output. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `object`"
-            },
-            "contentType": {
-                "desc": "If the `type` is specified as `object`, this **MUST** indicate the Content-Type of the response"
-            },
-            "properties": {
-                "desc": "The properties which are available to the user. For example, if this action returns `{\"units\": 100, \"currency\": \"eur\"}`, you **SHOULD** declare `units` and `currency` as two properties. Each property mentioned here, may have the following information about it:",
-                "$block": {
-                    "type": {
-                        "desc": "The type of this attribute. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `object`",
-                        "required": true
-                    }
-                }
-            }
-        }
+        "desc": "Type of data that the action returns. [Read more](#output)",
+        "required": true
+    },
+    "http | rpc | format": {
+        "desc": "How to call the action. [Read more](/schema/interface)",
+        "required": true
     }
 }
 </p>
 </json-table>
 
-::: tip 💡 Heads up!
-The various types of interfaces (such as `http`, `command`, `rpc`) for actions are described [here](/schema/interface/).  
-:::
+## Arguments
 
+Define the `arguments` (input data) that the action accepts.
 
-## Checks
+An `action` **MUST** declare all arguments it accepts. Each argument, will have the following information about them.
 
-Arguments **SHOULD** provide variable checks.
+<json-table>
+<p>
+{
+    "help": {
+        "desc": "A short description of the argument which can provide clarity to end user."
+    },
+    "type": {
+        "desc": "The type of this argument. It must be one of `int`, `number`, `float`, `string`, `uuid`, `path`, `list`, `map`, `boolean`, `object`, or `any`",
+        "required": true
+    },
+    "in": {
+        "desc": "The location of this argument. Each execution strategy provides different possible values for this. Possible values are `requestBody`, `query`, and `path`. (**Required** for `http` interface)"
+    },
+    "required": {
+        "desc": "Whether this argument is required or not. The default value for this is false"
+    },
+    "default": {
+        "desc": "The default value if not provided by the user (**not** available for types `map` or `object`)"
+    },
+    "pattern": {
+        "desc": "[Read more](#pattern) (for `type: string` only)"
+    },
+    "enum": {
+        "desc": "[Read more](#enum) (for `type: enum` only)"
+    },
+    "range": {
+        "desc": "[Read more](#range) (for `type: int|float` only)"
+    }
+}
+</p>
+</json-table>
+
+### Example
+
+Below is an `action` called `capitalize` which accepts `string` and outputs a type a `string`.
+
+```yaml{4-7}
+actions:
+  capitalize:
+    arguments:
+      text:
+        help: The string to capitalize.
+        type: string
+        in: requestBody
+    http:
+      method: post
+      port: 8000
+      path: /run/capitalize
+    output:
+      type: string
+```
+
+```bash
+$ curl -X POST -d '{"text":"einstein"}' http://service:8000/run/capitalize
+# Einstein
+```
+
 
 ### Patterns
+
+The argument `color` must match the regexp `pattern`.
 
 ```yaml{6}
 actions:
@@ -128,6 +137,8 @@ actions:
 ```
 
 ### Enums
+
+The argument `color` must match one of the values under `enum`.
 
 ```yaml{6-9}
 actions:
@@ -143,15 +154,47 @@ actions:
 
 ### Range
 
+The argument `threshold` must be within a `range`.
+
 ```yaml{6,7,8}
 actions:
   colorize:
     arguments:
       threshold:
-        type: number
-        range:
+        type: int
+        range:  # default is no bounds for min and max
           min: 10
           max: 20
 ```
 
-:bulb: By default there are no bounds for min and max.
+
+## Output
+
+
+<json-table>
+<p>
+{
+    "type": {
+        "desc": "The type of output. It must be one of `int`, `number`, `float`, `string`, `uuid`, `path`, `list`, `map`, `boolean`, `object`, or `any`"
+    },
+    "contentType": {
+        "desc": "If the `type` is specified as `object`, this **MUST** indicate the Content-Type of the response"
+    },
+    "properties": {
+        "desc": "[Read more](#properies) (for `type: object` only)"
+    }
+}
+</p>
+</json-table>
+
+### Properties
+
+Define the objects properties.
+
+<json-table>
+<p>
+{
+  
+}
+</p>
+</json-table>
