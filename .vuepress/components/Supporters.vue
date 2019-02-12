@@ -1,6 +1,6 @@
-<!--
 <template>
   <div class="wrap-content">
+  <!--
       <h1>OMG Supporters</h1>
       <p>Here are some of the top companies that uphold the OMG standard:</p>
       <div class="supporters">
@@ -17,9 +17,9 @@
           <a href="#feedback" title="Contact">Contact</a>
         </div>
       </div>
+  -->
   </div>
 </template>
--->
 
 <script>
   export default {
