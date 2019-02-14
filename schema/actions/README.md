@@ -209,6 +209,9 @@ An `action` **MUST** define it's `output`.
 
 ### Properties
 
+<Badge text="actions.$.arguments.$.output.properties" type="tip"/> <Badge text="actions.$.events.$.arguments.$.output.properties" type="tip"/>
+
+
 A map of properties this object has defined.
 
 ```yaml
@@ -228,7 +231,9 @@ The `output` of this `action` returns an object that has two properites that the
 
 
 
-### Action
+### Next Actions
+
+<Badge text="actions.$.arguments.$.output.actions" type="tip"/> <Badge text="actions.$.events.$.arguments.$.output.actions" type="tip"/>
 
 An `output` **MAY** define other `actions` the user may perform. 
 

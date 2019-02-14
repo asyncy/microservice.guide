@@ -1,6 +1,6 @@
 <template>
   <div class="wrap-content">
-      <h1>The Tweleve-Factor Microservice</h1>
+      <h1>The Twelve-Factor Microservice</h1>
 
       <blockquote>
           <small>❤️Inspired by <a href="https://12factor. net/">The Twelve-Factor App</a></small>
