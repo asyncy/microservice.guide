@@ -1,8 +1,10 @@
 <template>
   <div class="wrap-content">
       <h1>The Tweleve-Factor Microservice</h1>
+
       <blockquote>
-          <small>Inspired by <a href="https://12factor.net/">The Twelve-Factor App</a> but for specialized microservices.</small>
+          <small>❤️Inspired by <a href="https://12factor. net/">The Twelve-Factor App</a></small>
+          <br><Badge text="Beta" type="warn" verticle="bottom"/> This guide is under active development, we welcome your input and contributions in <a href="https://github.com/microservices/microservice.guide">GitHub</a> ️
       </blockquote>
 
       <ol type="I">
