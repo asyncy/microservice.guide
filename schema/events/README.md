@@ -5,18 +5,11 @@
 A Service **MAY** have an action that publishes events asynchronously.
 The Platform would subscribe to events and the Service will publish events back to the Platform.
 
-> <small>Great for webhooks, pubsub, user interactions and streaming IoT data.</small>
-
-Subscribing to an event **MAY** include `arguments` which can be used to define certain parameters
-concerning the subscription. For example, filtering the content before the event is published.
-
-Events **SHOULD** define an `output` when a payload is sent to the Platform.
-
-The Service **MUST** define all of its events in the `microservice.yml` file. 
+> <small>Intended for webhooks, pubsub, user interactions and streaming IoT data.</small>
 
 [[toc]]
 
-### Configuration
+## Example Event Pubsub
 
 ```yaml {5,24,30}
 actions:
@@ -56,79 +49,6 @@ actions:
           <<: *user
 ```
 
-<json-table>
-<p>
-{
-  "help": {
-    "desc": "A human friendly description for this event."    
-  },
-  "http": {
-    "desc": "",
-    "$block": {
-      "port": "The port to make (un)subscribe requests to.",
-      "subscribe": {
-        "required": true,
-        "desc": "Describing how to subscribe to the event.",
-        "$block": {
-          "path": "A path used in the request url.",
-          "method": "HTTP method. E.g. post.",
-          "contentType": "Choose how arguments are encoded when subscribing."
-        }
-      },
-      "unsubscribe": {
-        "desc": "Describing how to unsubscribe to the event.",
-        "$block": {
-          "path": "A path used in the request url.",
-          "method": "HTTP method. E.g. post or delete",
-          "contentType": "Choose how arguments are encoded when unsubscribing."
-        }
-      }
-    }
-  },
-  "arguments": {
-      "desc": "An event **MAY** have named arguments. Each argument, may have the following information about them",
-      "$block": {
-          "help": {
-              "desc": "Arguments **SHOULD** provide a short description of the argument which can provide clarity to end users."
-          },
-          "type": {
-              "desc": "The type of this argument. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `enum`",
-              "required": true
-          },
-          "in": {
-              "desc": "The location of this argument. Each execution strategy provides different possible values for this.",
-              "required": true
-          },
-          "required": {
-              "desc": "Whether this argument is required or not. The default value for this is false"
-          }
-      }
-  },
-  "output": {
-      "desc": "If your event returns data, it's output **SHOULD** be described here",
-      "$block": {
-          "type": {
-              "desc": "The type of output. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `object`"
-          },
-          "contentType": {
-              "desc": "If the `type` is specified as `object`, this **MUST** indicate the Content-Type of the response"
-          },
-          "properties": {
-              "desc": "The properties which are available to the user. For example, if this event returns `{\"units\": 100, \"currency\": \"eur\"}`, you **SHOULD** declare `units` and `currency` as two properties. Each property mentioned here, may have the following information about it:",
-              "$block": {
-                  "type": {
-                      "desc": "The type of this attribute. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `object`",
-                      "required": true
-                  }
-              }
-          }
-      }
-  }
-}
-</p>
-</json-table>
-
-### How it works
 
 1. **Subscribe**. The Platform subscribes to an event by making a HTTP request to the Service.
 ```shell
@@ -181,13 +101,75 @@ POST https://CLIENT/signups {
 > <small>This allows the Platform to subscribe to many events. 
 All subscriptions will have a unique destination to publish events.</small>
 
-### Example Services
+## Overview
+
+<json-table>
+<p>
+{
+  "help": {
+    "desc": "A human friendly description for this event."    
+  },
+  "http": {
+    "desc": "Define how the platform can subscribe and unsubscribe from events",
+    "required": true,
+    "$block": {
+      "port": "The port to make (un)subscribe requests to.",
+      "subscribe": {
+        "required": true,
+        "desc": "Describing how to subscribe to the event.",
+        "$block": {
+          "path": "A path used in the request url.",
+          "method": "HTTP method. E.g. post.",
+          "contentType": "Choose how arguments are encoded when subscribing."
+        }
+      },
+      "unsubscribe": {
+        "desc": "Describing how to unsubscribe to the event.",
+        "$block": {
+          "path": "A path used in the request url.",
+          "method": "HTTP method. E.g. post or delete",
+          "contentType": "Choose how arguments are encoded when unsubscribing."
+        }
+      }
+    }
+  },
+  "arguments": {
+      "desc": "Optional and required inputs the action has. [Read more](#arguments)",
+      "required": true
+  },
+  "output": {
+      "desc": "Type of data that the action returns. [Read more](#output)",
+      "required": true
+  }
+}
+</p>
+</json-table>
+
+
+**Example Services**
 
 Below are a few services that publish events.
 
-- [Slack Bot](https://github.com/microservice/slack/blob/master/microservice.yml)
+- [Slack: Bot](https://github.com/microservice/slack/blob/master/microservice.yml)
   - Listen and hear messages in a room.
-- [Twitter Hashtag Streaming](https://github.com/microservice/twitter/blob/master/microservice.yml)
+- [Twitter: Streaming tweets](https://github.com/microservice/twitter/blob/master/microservice.yml)
   - Stream tweets filtered by a hashtag.
-- [GitHub Webhooks](https://github.com/microservice/github/blob/master/microservice.yml)
-  - Receives GitHub webhooks and publishes them as events.
+
+
+## Arguments
+
+<Badge text="actions.$.events.$.arguments" type="info"/>
+
+Subscribing to an event **MAY** include `arguments` which can be used to define certain parameters
+concerning the subscription. For example, filtering the content before the event is published.
+
+See [Action Arguments](/schema/actions/#arguments) for details.
+
+
+## Output
+
+<Badge text="actions.$.events.$.output" type="info"/>
+
+The event publishes to the Platform data which **MUST** include the `output` detailing the structure of the event data published.
+
+See [Action Output](/schema/actions/#output) for details.

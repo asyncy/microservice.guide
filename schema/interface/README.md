@@ -7,14 +7,9 @@ each action **MUST** provide an interface for it to be executed:
 
 ## HTTP
 
-```yaml
-actions:
-  convert:
-    http:
-      port: 8080
-      method: get
-      path: /convert
-```
+<Badge text="actions.$.http" type="info"/>
+
+An `action` **MAY** use the HTTP protocol to execute it's function.
 
 <json-table>
 <p>
@@ -37,6 +32,15 @@ actions:
 }
 </p>
 </json-table>
+
+```yaml
+actions:
+  convert:
+    http:
+      port: 8080
+      method: get
+      path: /convert
+```
 
 ### Platform to Server
 
@@ -113,6 +117,9 @@ $ curl -X POST http://service:8080/path -H "Content-Type: application/json" -d '
 ```
 
 ## Command
+
+<Badge text="actions.$.format" type="info"/>
+
 If the container provider is Docker, then `docker exec` is used:
 
 ### Docker Run/Exec
@@ -187,6 +194,8 @@ $ docker run --rm alpine /app/count.sh '{"word": "hello"}'
 ```
 
 ## RPC
+
+<Badge text="actions.$.rpc" type="info"/>
 
 The Service **MAY** communicate via RPC.
 

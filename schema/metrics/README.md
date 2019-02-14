@@ -11,31 +11,28 @@ See [Prometheus Metric and Label Naming](https://prometheus.io/docs/practices/na
 ## StatsD
 Containers can send metrics to StatsD for aggregation and delivery.
 
-> StatsD basic usage
+#### StatsD basic usage
 
 ```shell
 echo "accounts.authentication.password.failure.no_email_found:1|c" \
 | nc -u -w1 $OMG_STATSD_HOSTNAME $OMG_STATSD_PORT
 ```
 
-> StatsD with tag support
+#### StatsD with tag support
 
 ```shell
 echo "accounts.authentication.password.failure.no_email_found:1|c|#tag:value,another_tag:another_value" \
 | nc -u -w1 $OMG_STATSD_HOSTNAME $OMG_STATSD_PORT
 ```
 
-
 | Endpoint | Port | Protocol |
 | --- | --- | --- |
-| `$OMG_STATSD_HOSTNAME` (typically `statsd`) | `$OMG_STATSD_PORT` (typically `8125`) | `tcp` + `udp` |
+| `$OMG_STATSD_HOSTNAME` | `$OMG_STATSD_PORT` | `tcp` + `udp` |
 
 
 See [https://github.com/etsy/statsd](https://github.com/etsy/statsd) for usage details.
 
 ## Flat Files (Metrics 2.0)
-
-> Flat Files (Metrics 2.0)
 
 Write [Metrics 2.0](http://metrics20.org/) output to `/var/lib/metrics.dat`
 
@@ -58,12 +55,29 @@ meta: {
 ```
 
 ## Prometheus Exporter
-Define your metrics path in `microservice.yml`
+
+Your serice **MAY** expose metrics via Prometheus Exporter. Provide the location of where to retrieve these metrics in your `microservice.yml`.
+
 ```yaml
 metrics:
-  tls: false
-  port: 8080
-  uri: /metrics
+  prometheus:
+    tls: false
+    port: 8080
+    uri: /metrics
 ```
 
 See the official [Prometheus](https://prometheus.io/docs/instrumenting/exporters/) documentation to understand how to write an exporter
+
+
+<!--
+# Details
+
+The service **MAY** provide additional details about metrics in the `microservice.yml` assist end users in understanding the metrics.
+
+```yaml
+metrics:
+    details:
+        github_response_time:
+            help: Time in milliseconds GitHub takes takes to return results
+```
+-->
