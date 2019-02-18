@@ -11,6 +11,15 @@ each action **MUST** provide an interface for it to be executed:
 
 An `action` **MAY** use the HTTP protocol to execute it's function.
 
+```yaml
+actions:
+  convert:
+    http:
+      port: 8080
+      method: get
+      path: /convert
+```
+
 <json-table>
 <p>
 {
@@ -32,15 +41,6 @@ An `action` **MAY** use the HTTP protocol to execute it's function.
 }
 </p>
 </json-table>
-
-```yaml
-actions:
-  convert:
-    http:
-      port: 8080
-      method: get
-      path: /convert
-```
 
 ### Platform to Server
 

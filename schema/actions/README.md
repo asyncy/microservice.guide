@@ -1,14 +1,25 @@
 # Actions
+Defining actions is a way to organize which APIs are exposed 
+and how they are used within an application or platform.
 
-Services **MUST** list all actions; exposing the functionality of the service.
+Properly defining actions can assist with the following:
+  - Service discovery
+  - Documentation
+  - Operational insight
 
-Actions describe the APIs, functions and logic within the microservice. Each action includes the `arguments` and `output` that correspond with the behavior of the action.
+Services **MUST** list actions that can be executed.
+
+At a high level, services **SHOULD** define the following about themselves:
+
+- Interface (HTTP/RPC/etc)
+- Arguments
+- Output 
 
 [[toc]]
 
 **Example**
 
-Below is an action called `convert` which accepts `units`, `from` and `to` returning an object with properies of `units` and `currency`.
+Here's an action called `convert` which accepts `units`, `from` and `to` returning an object with two properties - `units` and `currency`.
 
 ```yaml
 actions:
@@ -44,7 +55,7 @@ Within a named `action`, the following fields are available:
     },
     "arguments": {
         "desc": "Optional and required inputs the action has. [Read more](#arguments)",
-        "required": true
+        "required": false
     },
     "output": {
         "desc": "Type of data that the action returns. [Read more](#output)",
@@ -64,7 +75,7 @@ Within a named `action`, the following fields are available:
 
 Define the `arguments` (input data) that the action accepts.
 
-An `action` **MUST** declare all arguments it accepts. Each argument, will have the following information about them.
+An `action` **MUST** declare all arguments it accepts. Each argument, will have the following information about it:
 
 <json-table>
 <p>
@@ -73,11 +84,12 @@ An `action` **MUST** declare all arguments it accepts. Each argument, will have 
         "desc": "A short description of the argument which can provide clarity to end user."
     },
     "type": {
-        "desc": "The type of this argument. It must be one of `int`, `number`, `float`, `string`, `uuid`, `path`, `list`, `map`, `boolean`, `object`, or `any`",
+        "desc": "The type of this argument. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `enum`, or `any`",
         "required": true
     },
     "in": {
-        "desc": "The location of this argument. Each execution strategy provides different possible values for this. Possible values are `requestBody`, `query`, and `path`. (**Required** for `http` interface)"
+        "desc": "The location of this argument. Each execution strategy provides different possible values for this. Possible values are `requestBody`, `query`, and `path`. (**Required** for `http` interface)",
+        "required": true
     },
     "required": {
         "desc": "Whether this argument is required or not. The default value for this is false"
@@ -100,7 +112,7 @@ An `action` **MUST** declare all arguments it accepts. Each argument, will have 
 
 **Example**
 
-Below is an `action` called `capitalize` which accepts `string` and outputs a type a `string`.
+Here is an `action` called `capitalize` which accepts `string` and returns a `string`.
 
 ```yaml{4-7}
 actions:
@@ -114,12 +126,13 @@ actions:
       method: post
       port: 8000
       path: /run/capitalize
+      contentType: application/json
     output:
       type: string
 ```
 
 ```bash
-$ curl -X POST -d '{"text":"einstein"}' http://service:8000/run/capitalize
+$ curl -H "Content-Type: application/json" -d '{"text":"einstein"}' http://service:8000/run/capitalize
 # Einstein
 ```
 
@@ -182,7 +195,7 @@ actions:
 <Badge text="actions.$.arguments.$.output" type="tip"/> <Badge text="actions.$.events.$.arguments.$.output" type="tip"/>
 
 
-Outputs are what the action returns as it's result.
+Outputs are what the action returns as its result.
 
 An `action` **MUST** define it's `output`.
 
@@ -190,7 +203,7 @@ An `action` **MUST** define it's `output`.
 <p>
 {
     "type": {
-        "desc": "The type of output. It must be one of `int`, `number`, `float`, `string`, `uuid`, `path`, `list`, `map`, `boolean`, `object`, or `any`"
+        "desc": "The type of output. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `object`, or `any`"
     },
     "contentType": {
         "desc": "If the `type` is specified as `object`, this **MUST** indicate the Content-Type of the response"
@@ -205,7 +218,7 @@ An `action` **MUST** define it's `output`.
 </p>
 </json-table>
 
-> <small>If there is no output than it must use `output: null` explicitly.</small>
+> <small>If there is no output then it must use `output: null` explicitly.</small>
 
 ### Properties
 
@@ -227,9 +240,7 @@ actions:
           type: float
 ```
 
-The `output` of this `action` returns an object that has two properites that the next client can access: `lat` and `long`.
-
-
+The `output` of this `action` returns an object that has two properties that can be accessed: `lat` and `long`.
 
 ### Next Actions
 
@@ -237,7 +248,7 @@ The `output` of this `action` returns an object that has two properites that the
 
 An `output` **MAY** define other `actions` the user may perform. 
 
-The `action` may reference `properies` of it's parent.
+The `action` may reference `properties` of its parent.
 
 ```yaml{4,16-19}
 actions:
@@ -257,8 +268,8 @@ actions:
           actions:
             like: 
               <<: *like  # yaml feature to reuse a defined structure (see &like above)
-              set:
+              defaults:
                 tweetid: id
 ```
 
-> <small>Twitter streams tweets. Each tweet has an output of which has an action `like`. It utilizes the services action `like` by setting the argument `tweetid` to the property `id`. [See full example here](https://github.com/microservice/twitter/blob/da79f0f75f0b23d257cb3b8678d8f0d558f9432b/microservice.yml#L126-L145).</small>
+> <small>Twitter streams tweets. Each tweet has an output of which has an action `like`. It utilizes the service's action `like` by setting the argument `tweetid` to the property `id`. [See full example here](https://github.com/microservice/twitter/blob/da79f0f75f0b23d257cb3b8678d8f0d558f9432b/microservice.yml#L126-L145).</small>

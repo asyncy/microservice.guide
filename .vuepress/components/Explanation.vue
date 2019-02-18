@@ -3,8 +3,8 @@
       <h1>The Twelve-Factor Microservice</h1>
 
       <blockquote>
-          <small>❤️Inspired by <a href="https://12factor. net/">The Twelve-Factor App</a></small>
-          <br><Badge text="Beta" type="warn" verticle="bottom"/> This guide is under active development, we welcome your input and contributions in <a href="https://github.com/microservices/microservice.guide">GitHub</a> ️
+          <small>❤️Inspired by <a href="https://12factor.net/">The Twelve-Factor App</a></small>
+          <br><Badge text="Beta" type="warn" verticle="bottom"/> This guide is under active development. We welcome your input and contributions on <a href="https://github.com/microservices/microservice.guide">GitHub</a> ️
       </blockquote>
 
       <ol type="I">
@@ -16,7 +16,7 @@
 
         <li>
           <h3>Containerized</h3>
-          <p>For portability and reusability (ex. Docker, rkt or FaaS).</p>
+          <p>For portability and re-usability (ex. Docker, rkt or FaaS).</p>
         </li>
 
         <li>
@@ -34,7 +34,7 @@
 
         <li>
           <h3>Any Interface</h3>
-          <p>Free choose the <a href="/schema/interface/">communication interface</a>.</p>
+          <p>Free to choose any <a href="/schema/interface/">communication interface</a>.</p>
         </li>
 
         <li>
@@ -44,7 +44,7 @@
 
         <li>
           <h3>Declarative</h3>
-          <p>List all <a href="/schema/actions/"><code>actions</code></a> the service can perform, including the <code>arguments</code> and <code>output</code>.</p>
+          <p>List all <a href="/schema/actions/"><code>actions</code></a> the service can perform, including the <code>arguments</code> and the <code>output</code>.</p>
         </li>
 
         <li>
@@ -63,7 +63,7 @@
         </li>
 
         <li>
-          <h3>Issolated</h3>
+          <h3>Isolated</h3>
           <p>Not depend on any other service (aka container coupling).</p>
         </li>
 

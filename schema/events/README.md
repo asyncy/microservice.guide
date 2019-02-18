@@ -170,6 +170,6 @@ See [Action Arguments](/schema/actions/#arguments) for details.
 
 <Badge text="actions.$.events.$.output" type="info"/>
 
-The event publishes to the Platform data which **MUST** include the `output` detailing the structure of the event data published.
+The event published to the Platform **MUST** include the `output` detailing the structure of the event data published.
 
 See [Action Output](/schema/actions/#output) for details.

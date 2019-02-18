@@ -13,7 +13,7 @@ environment:
       Description of how the user should produce this variable
 ```
 
-Environment variables are **case insensative** to the end-user. The are provided to the service in the same case defined. For example, if the user defines `ACCESS_TOKEN=abc` the service will get `access_token=abc`.
+Environment variables are **case insensitive** to the end-user. They are provided to the service in upper case. For example, if the user defines `access_TOKEN=abc`, the service will get `ACCESS_TOKEN=abc`.
 
 Each environment variable under `environment` may have the following information about it:
 
@@ -26,7 +26,7 @@ Each environment variable under `environment` may have the following information
     },
     "pattern": "Validations for strings in a regular expression format.",
     "required": "Whether this variable is required or not. Default is `false`",
-    "sensative": "Set `sensative: true` if the environment variable is considered secret/private to inform the platform to encript the variable. Default is `false`",
+    "sensitive": "Set this to true if the environment variable is considered secret/private to inform the platform to encrypt the variable. Default is `false`",
     "help": "Description of how the user can produce this variable or details on why they need to provide it"
 }
 </p>

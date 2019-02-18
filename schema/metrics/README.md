@@ -56,7 +56,7 @@ meta: {
 
 ## Prometheus Exporter
 
-Your serice **MAY** expose metrics via Prometheus Exporter. Provide the location of where to retrieve these metrics in your `microservice.yml`.
+Your service **MAY** expose metrics via Prometheus Exporter. Provide the location of where to retrieve these metrics in your `microservice.yml`.
 
 ```yaml
 metrics:
