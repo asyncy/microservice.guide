@@ -1,11 +1,11 @@
 <template>
   <div class="omg-app">
-    <h2 class="title">Test your microservice with OMG</h2>
+    <h2 class="title">Test your microservice with OMS</h2>
     <div class="illustration">
-      <img src="/assets/img/omg-app.png" alt="OMG App design" >
+      <img src="/assets/img/omg-app.png" alt="OMS App design" >
     </div>
     <div class="content">
-      <h2 class="title">Test your microservice with OMG</h2>
+      <h2 class="title">Test your microservice with OMS</h2>
       <div class="text">The open standard for reuse active we welcome your input and contributions in GitHub.</div>
       <s-button
         secondary

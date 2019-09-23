@@ -29,7 +29,7 @@ export default {
         desc: 'Use any of our libraries that will autogenerate the documentation required for anyone to use your microservice.'
       }, {
         title: 'Discoverable',
-        desc: `Its like Java docs but for your microservice. With OMG you don't have to spend hours on the white board explaining how your service works.`
+        desc: `Its like Java docs but for your microservice. With OMS you don't have to spend hours on the white board explaining how your service works.`
       }
     ]
   })

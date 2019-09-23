@@ -1,7 +1,11 @@
 # Overview
-The Open Microservice Guide command-line interface, *omg* for short, allows you to validate, test, and debug your `microservice.yml` implementation.
 
-See the [microservice-cli](https://github.com/microservices/microservice-cli) project to contribute!
+The Open Microservice Specification command-line interface allows you to
+validate, test, and debug your `microservice.yml` implementation.
+
+See the [oms](https://github.com/microservices/oms/tree/master/packages/oms)
+project to contribute!
 
 ## Installation
-`npm install -g omg`
+
+`npm install -g oms`

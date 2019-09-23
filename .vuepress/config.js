@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Open Microservice Guide',
+  title: 'Open Microservice Specification',
   description: 'The open standard for reusable microservices',
   head: [['link', { rel: 'icon', type: 'image/png', href: '/favicon.ico' }]],
   themeConfig: {

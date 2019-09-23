@@ -1,10 +1,15 @@
 # Test
+
 ## Run
-When ran in a directory of a microservice (a directory containing a `microservice.yml` and `Dockerfile`) this command will build
-the microservice and execute a given command.
+
+When ran in a directory of a microservice (a directory containing a
+`microservice.yml` and `Dockerfile`) this command will build the microservice
+and execute a given command.
+
 ### Usage
+
 ```
-omg run [options] <action>
+oms run [options] <action>
 
   Options:
 
@@ -15,20 +20,30 @@ omg run [options] <action>
 ```
 
 #### action
-Action is a required argument. The microservice will be executed with the given action.
+
+Action is a required argument. The microservice will be executed with the given
+action.
 
 #### [options]
+
 ##### Arguments
-If a command required arguments they can be passed as follows: `-a key='val'`. If required arguments are not given `run` will fail.
+
+If a command required arguments they can be passed as follows: `-a key='val'`.
+If required arguments are not given `run` will fail.
 
 ##### Environment variables
-If the microservice has any required environment variables they must be passed in with the `run` command. Much like Docker,
-environment variables can be passed as follows: `-e FOO='bar'`. If a required environment variable is not supplied `run` will fail.
+
+If the microservice has any required environment variables they must be passed
+in with the `run` command. Much like Docker, environment variables can be passed
+as follows: `-e FOO='bar'`. If a required environment variable is not supplied
+`run` will fail.
 
 ### Example `run` call
+
 ```sh
-omg run -e BOT_TOKEN='xoxb-****' send  -a message='Hello, World!' -a to=CAFAF9C
+oms run -e BOT_TOKEN='xoxb-****' send  -a message='Hello, World!' -a to=CAFAF9C
 ```
+
 ```sh
 ℹ Building Docker image
 Sending build context to Docker daemon  7.879MB
@@ -44,7 +59,7 @@ Step 4/4 : RUN npm i
  ---> Using cache
  ---> 35a377859cc3
 Successfully built 35a377859cc3
-Successfully tagged omg/asyncy/asyncy-slack-stream:latest
+Successfully tagged oms/asyncy/asyncy-slack-stream:latest
 ✔ Building Docker image
 ✔ Started Docker container: ece23f7a5005
 ✔ Health check passed

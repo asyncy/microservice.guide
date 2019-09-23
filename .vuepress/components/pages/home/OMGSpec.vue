@@ -1,8 +1,8 @@
 <template>
   <div class="omg-spec">
-    <h2 class="title">OMG Spec</h2>
+    <h2 class="title">OMS Spec</h2>
     <div class="content">
-      <h2 class="title">OMG Spec</h2>
+      <h2 class="title">OMS Spec</h2>
       <div class="text">A Spec to write highly reusable self documenting microservices.</div>
       <s-button
         secondary

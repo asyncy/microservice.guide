@@ -6,13 +6,13 @@
           Community
         </h1>
         <p class="text">
-          OMG has an active community of developers who are using the OMG spec to build their reusable applications within their organizations and for developers around the world. We'd love your help to improve and extend the project.
+          OMS has an active community of developers who are using the spec to build their reusable applications within their organizations and for developers around the world. We'd love your help to improve and extend the project.
         </p>
         <h4 class="contribute">
           Contribute on GitHub
         </h4>
         <p class="text-contribute">
-          We are always looking for active contributors in the OMG spec, and the tools that support the ecosystem. Here are a few areas where we would love community contribution in the OMG project. Be sure to follow our community addition guidelines.
+          We are always looking for active contributors in the OMS spec, and the tools that support the ecosystem. Here are a few areas where we would love community contribution in the OMS project. Be sure to follow our community addition guidelines.
         </p>
       </div>
       <div class="illustration">
@@ -26,7 +26,7 @@
       lightShadow
       @click="go()"
     >
-      OMG GitHub
+      OMS GitHub
     </s-button>
   </div>
 </template>
@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     go() {
-      window.location.assign('https://github.com/microservices/omg')
+      window.location.assign('https://github.com/microservices/oms')
     }
   }
 }

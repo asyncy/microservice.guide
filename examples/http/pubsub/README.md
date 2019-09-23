@@ -77,10 +77,10 @@ curl -X POST \
 
 ## Delivering events
 
-After the Platform has subscribed to events via the subscription HTTP request above,
-it's time for the service to deliver these events to the Platform.
-The service MUST make an HTTP request to the platform, to the endpoint
-specified during the subscription HTTP call.
+After the Platform has subscribed to events via the subscription HTTP request
+above, it's time for the service to deliver these events to the Platform. The
+service MUST make an HTTP request to the platform, to the endpoint specified
+during the subscription HTTP call.
 
 The HTTP payload must follow the
 [CloudEvents](https://github.com/cloudevents/spec/blob/master/json-format.md)
@@ -94,7 +94,7 @@ curl -X POST \
         "source": "/context", \
         "eventID": "1234-1234-1234", \
         "eventTime": "2018-08-06T17:53:09Z" \
-        "contentType": "application/vnd.omg.object+json", \
+        "contentType": "application/vnd.oms.object+json", \
         "data": {"data": {"foo": "bar"}} \
         }' \
      -H 'Content-Type: application/json; charset=utf-8' \

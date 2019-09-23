@@ -1,6 +1,6 @@
 <template>
   <div class="contact container large">
-    <h2 class="title">Contribute With OMG!</h2>
+    <h2 class="title">Contribute With OMS!</h2>
     <p class="text">
       We are under development and open to contribution. 100% open source.
       <br>
@@ -12,7 +12,7 @@
       @click="go()"
       class="contribute"
     >
-      Contribute to OMG
+      Contribute to OMS
     </s-button>
     <img class="cloud-native" src="/assets/img/cncf_color@2x.png" />
   </div>

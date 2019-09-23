@@ -37,7 +37,7 @@ export default {
         desc: 'Written in any programming language.'
       }, {
         title: 'Vendor-neutral',
-        desc: 'Not be tied to one platform. Platforms designed to interface with OMG Compliant services can interact with all services.'
+        desc: 'Not be tied to one platform. Platforms designed to interface with OMS compliant services can interact with all services.'
       }, {
         title: 'Any Interface',
         desc: 'Free to choose any communication interface.'

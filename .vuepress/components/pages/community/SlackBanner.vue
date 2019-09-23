@@ -2,7 +2,7 @@
   <div class="slack-banner container-narrow">
     <div class="slack">
       <h3 class="title">Slack Channel</h3>
-      <div class="text">Join other developers and users on the OMG Slack Channel!</div>
+      <div class="text">Join other developers and users on the OMS Slack Channel!</div>
     </div>
     <s-button
       primary
@@ -10,7 +10,7 @@
       lightShadow
       @click="go()"
     >
-      Join OMG Slack
+      Join OMS Slack
     </s-button>
   </div>
 </template>
