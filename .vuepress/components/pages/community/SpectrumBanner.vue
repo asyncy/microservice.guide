@@ -10,7 +10,7 @@
       lightShadow
       @click="go()"
     >
-      Join OMG on Spectrum
+      Join us on Spectrum
     </s-button>
   </div>
 </template>

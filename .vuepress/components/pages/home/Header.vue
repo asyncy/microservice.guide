@@ -48,7 +48,7 @@
         </div>
         <div class="content">
           <h4 class="title">Run anywhere</h4>
-          <div class="text">Run anywhere - from your terminal to slack. Tools for documentation and testing come free &#128521;</div>
+          <div class="text">Run anywhere - from your terminal to Slack. Tools for documentation and testing come free &#128521;</div>
         </div>
       </div>
     </div>

@@ -20,10 +20,10 @@
       <s-button
         primary
         lightShadow
-        @click="go('slack')"
-        class="slack"
+        @click="go('spectrum')"
+        class="spectrum"
       >
-        Join OMG Slack
+        Join OMG on Spectrum
       </s-button>
     </div>
     <!--
@@ -47,8 +47,8 @@ export default {
         case 'contribute':
           window.location.assign('https://github.com/microservices/omg')
           break
-        case 'slack':
-          window.location.assign('https://asyncy.click/slack')
+        case 'spectrum':
+          window.location.assign('https://spectrum.chat/open-microservices')
           break
       }
     }
@@ -94,11 +94,11 @@ export default {
     align-items: center;
     margin-bottom: 1.5rem;
 
-    .slack, .contribute {
+    .spectrum, .contribute {
       min-width: 16rem;
     }
 
-    .slack {
+    .spectrum {
       background: #C5DCFC;
       color: $secondaryColor;
     }
