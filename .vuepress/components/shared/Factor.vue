@@ -58,7 +58,7 @@ export default {
   svg
     padding 1rem
   h4
-    margin-top 2rem
+    margin-top 0.75rem
     padding-left 1rem
   p
     padding 0 1rem
