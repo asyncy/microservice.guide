@@ -22,9 +22,9 @@ export default {
     partners: [
       'gcp',
       'gh',
-      'docker',
+      'containerd',
       'k8s',
-      'rkt'
+      'crio'
     ]
   })
 }
