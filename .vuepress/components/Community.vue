@@ -5,6 +5,9 @@
       <community-repositories class="container-narrow"/>
     </section>
     <community-libraries class="container-narrow"/>
+    <section class="bg-spectrum">
+      <spectrum-banner class="container-narrow"/>
+    </section>
   </OMGPage>
 </template>
 
@@ -31,8 +34,9 @@ export default {
 <style lang="stylus" scoped>
 .bg-gray
   background #F9FBFD
-.spectrum-bg
-  background url('/assets/img/spectrum-bg.png') bottom right no-repeat #EEF3FA
+.bg-spectrum
+  background #EEF3FA
   border-radius 10px
-  margin 5rem auto 6.25rem auto !important
+  margin 5rem auto 0 auto !important
+  padding 3.5rem 
 </style>

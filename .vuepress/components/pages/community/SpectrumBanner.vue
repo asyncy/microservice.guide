@@ -1,8 +1,9 @@
 <template>
   <div class="spectrum-banner container-narrow">
     <div class="spectrum">
-      <h3 class="title">Spectrum Chat</h3>
-      <div class="text">Join us &amp; other developers on Spectrum!</div>
+      <h3 class="title">Questions? Thoughts? Ideas?</h3>
+      <div class="text">Awesome, OMG is 100% community-driven so we'd love to
+      hear from you!</div>
     </div>
     <s-button
       primary
