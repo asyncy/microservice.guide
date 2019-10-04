@@ -1,7 +1,7 @@
 <template>
   <div class="home-header">
     <h1 class="main-title">Turn containers into libraries.</h1>
-    <h2 class="main-subtitle">A declarative way to define and expose the events, actions and API's inside containerized software.</h2>
+    <h2 class="main-subtitle">A declarative way to define and expose the events, actions and APIs inside containerized software.</h2>
     <s-button 
       class="get-started" 
       primary 
