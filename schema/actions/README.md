@@ -111,10 +111,10 @@ An `action` **MUST** declare all arguments it accepts. Each argument, will have 
         "desc": "The default value if not provided by the user (**not** available for types `map` or `object`)"
     },
     "pattern": {
-        "desc": "[Read more](#pattern) (for `type: string` only)"
+        "desc": "[Read more](#patterns) (for `type: string` only)"
     },
     "enum": {
-        "desc": "[Read more](#enum) (for `type: enum` only)"
+        "desc": "[Read more](#enums) (for `type: enum` only)"
     },
     "range": {
         "desc": "[Read more](#range) (for `type: int|float` only)"
