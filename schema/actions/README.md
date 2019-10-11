@@ -3,17 +3,14 @@ layout: Docs
 home: false
 sidebar: true
 ---
-
 # Actions
-
-Defining actions is a way to organize which APIs are exposed and how they are
-used within an application or platform.
+Defining actions is a way to organize which APIs are exposed 
+and how they are used within an application or platform.
 
 Properly defining actions can assist with the following:
-
-- Service discovery
-- Documentation
-- Operational insight
+  - Service discovery
+  - Documentation
+  - Operational insight
 
 Services **MUST** list actions that can be executed.
 
@@ -21,20 +18,19 @@ At a high level, services **SHOULD** define the following about themselves:
 
 - Interface (HTTP/RPC/etc)
 - Arguments
-- Output
+- Output 
 
 [[toc]]
 
 **Example**
 
-Here's an action called `convert` which accepts `units`, `from` and `to`
-returning an object with two properties - `units` and `currency`.
+Here's an action called `convert` which accepts `units`, `from` and `to` returning an object with two properties - `units` and `currency`.
 
 ```yaml
 actions:
   convert:
     help: Convert a currency into another currency
-    http: # Defining how to execute this action, more below.
+    http:  # Defining how to execute this action, more below.
     arguments:
       units:
         type: number
@@ -44,7 +40,7 @@ actions:
         type: string
       conversionAttributes:
         type: object
-        properties: # Required if the type is object.
+        properties:  # Required if the type is object.
           decimals:
             type: int
     output:
@@ -85,13 +81,11 @@ Within a named `action`, the following fields are available:
 
 ## Arguments
 
-<SBadge text="actions.$.arguments" type="tip"/>
-<SBadge text="actions.$.events.$.arguments" type="tip"/>
+<SBadge text="actions.$.arguments" type="tip"/> <SBadge text="actions.$.events.$.arguments" type="tip"/>
 
 Define the `arguments` (input data) that the action accepts.
 
-An `action` **MUST** declare all arguments it accepts. Each argument, will have
-the following information about it:
+An `action` **MUST** declare all arguments it accepts. Each argument, will have the following information about it:
 
 <json-table>
 <p>
@@ -131,8 +125,7 @@ the following information about it:
 
 **Example**
 
-Here is an `action` called `capitalize` which accepts `string` and returns a
-`string`.
+Here is an `action` called `capitalize` which accepts `string` and returns a `string`.
 
 ```yaml{4-7}
 actions:
@@ -156,10 +149,10 @@ $ curl -H "Content-Type: application/json" -d '{"text":"einstein"}' http://servi
 # Einstein
 ```
 
+
 ### Patterns
 
-<SBadge text="actions.$.arguments.$.pattern" type="tip"/>
-<SBadge text="actions.$.events.$.arguments.$.pattern" type="tip"/>
+<SBadge text="actions.$.arguments.$.pattern" type="tip"/> <SBadge text="actions.$.events.$.arguments.$.pattern" type="tip"/>
 
 The argument `color` must match the regexp `pattern`.
 
@@ -174,8 +167,8 @@ actions:
 
 ### Enums
 
-<SBadge text="actions.$.arguments.$.enum" type="tip"/>
-<SBadge text="actions.$.events.$.arguments.$.enum" type="tip"/>
+<SBadge text="actions.$.arguments.$.enum" type="tip"/> <SBadge text="actions.$.events.$.arguments.$.enum" type="tip"/>
+
 
 The argument `color` must match one of the values under `enum`.
 
@@ -186,15 +179,14 @@ actions:
       color:
         type: enum
         enum:
-          - red
-          - blue
-          - green
+        - red
+        - blue
+        - green
 ```
 
 ### Range
 
-<SBadge text="actions.$.arguments.$.range" type="tip"/>
-<SBadge text="actions.$.events.$.arguments.$.range" type="tip"/>
+<SBadge text="actions.$.arguments.$.range" type="tip"/> <SBadge text="actions.$.events.$.arguments.$.range" type="tip"/>
 
 The argument `threshold` must be within a `range`.
 
@@ -204,18 +196,16 @@ actions:
     arguments:
       threshold:
         type: int
-        range: # default is no bounds for min and max
+        range:  # default is no bounds for min and max
           min: 10
           max: 20
 ```
 
 ### Lists
 
-<Badge text="actions.$.arguments.$.list" type="tip"/>
-<Badge text="actions.$.events.$.arguments.$.list" type="tip"/>
+<Badge text="actions.$.arguments.$.list" type="tip"/> <Badge text="actions.$.events.$.arguments.$.list" type="tip"/>
 
-The optional argument `list` must have a key `elements` with the type of its
-list elements.
+The optional argument `list` must have a key `elements` with the type of its list elements.
 
 ```yaml{6}
 actions:
@@ -232,11 +222,9 @@ This service argument must be a list of integers.
 
 ### Maps
 
-<Badge text="actions.$.arguments.$.map" type="tip"/>
-<Badge text="actions.$.events.$.arguments.$.map" type="tip"/>
+<Badge text="actions.$.arguments.$.map" type="tip"/> <Badge text="actions.$.events.$.arguments.$.map" type="tip"/>
 
-The argument `map` must have the keys `keys` and `values` with the respective
-types of the map.
+The argument `map` must have the keys `keys` and `values` with the respective types of the map.
 
 ```yaml{6}
 actions:
@@ -251,13 +239,11 @@ actions:
             type: int
 ```
 
-This service argument must be a `map` with `string` as keys and integers as
-value.
+This service argument must be a `map` with `string` as keys and integers as value.
 
 ### Objects
 
-<Badge text="actions.$.arguments.$.properties" type="tip"/>
-<Badge text="actions.$.events.$.arguments.$.properties" type="tip"/>
+<Badge text="actions.$.arguments.$.properties" type="tip"/> <Badge text="actions.$.events.$.arguments.$.properties" type="tip"/>
 
 The argument type `object` must have a `properties` entry.
 
@@ -278,6 +264,7 @@ actions:
 
 Objects may be nested:
 
+
 ```yaml{6}
 actions:
   create:
@@ -296,10 +283,12 @@ actions:
                 type: string
 ```
 
+
 ## Output
 
-<SBadge text="actions.$.arguments.$.output" type="tip"/>
-<SBadge text="actions.$.events.$.arguments.$.output" type="tip"/>
+
+<SBadge text="actions.$.arguments.$.output" type="tip"/> <SBadge text="actions.$.events.$.arguments.$.output" type="tip"/>
+
 
 Outputs are what the action returns as its result.
 
@@ -325,13 +314,13 @@ An `action` **MUST** define it's `output`.
 </json-table>
 
 > <small>If there is no output then it must use `output: none` explicitly.
-> `output: none` can also be used if the output should be ignored (e.g. for
-> debug output). </small>
+> `output: none` can also be used if the output should be ignored (e.g. for debug output).
+> </small>
 
 ### Properties
 
-<SBadge text="actions.$.arguments.$.output.properties" type="tip"/>
-<SBadge text="actions.$.events.$.arguments.$.output.properties" type="tip"/>
+<SBadge text="actions.$.arguments.$.output.properties" type="tip"/> <SBadge text="actions.$.events.$.arguments.$.output.properties" type="tip"/>
+
 
 A map of properties this object has defined.
 
@@ -348,15 +337,13 @@ actions:
           type: float
 ```
 
-The `output` of this `action` returns an object that has two properties that can
-be accessed: `lat` and `long`.
+The `output` of this `action` returns an object that has two properties that can be accessed: `lat` and `long`.
 
 ### Next Actions
 
-<SBadge text="actions.$.arguments.$.output.actions" type="tip"/>
-<SBadge text="actions.$.events.$.arguments.$.output.actions" type="tip"/>
+<SBadge text="actions.$.arguments.$.output.actions" type="tip"/> <SBadge text="actions.$.events.$.arguments.$.output.actions" type="tip"/>
 
-An `output` **MAY** define other `actions` the user may perform.
+An `output` **MAY** define other `actions` the user may perform. 
 
 The `action` may reference `properties` of its parent.
 
@@ -376,13 +363,10 @@ actions:
             id:
               type: int
           actions:
-            like:
-              <<: *like # yaml feature to reuse a defined structure (see &like above)
+            like: 
+              <<: *like  # yaml feature to reuse a defined structure (see &like above)
               defaults:
                 tweetid: id
 ```
 
-> <small>Twitter streams tweets. Each tweet has an output of which has an action
-> `like`. It utilizes the service's action `like` by setting the argument
-> `tweetid` to the property `id`.
-> [See full example here](https://github.com/microservice/twitter/blob/da79f0f75f0b23d257cb3b8678d8f0d558f9432b/microservice.yml#L126-L145).</small>
+> <small>Twitter streams tweets. Each tweet has an output of which has an action `like`. It utilizes the service's action `like` by setting the argument `tweetid` to the property `id`. [See full example here](https://github.com/microservice/twitter/blob/da79f0f75f0b23d257cb3b8678d8f0d558f9432b/microservice.yml#L126-L145).</small>
