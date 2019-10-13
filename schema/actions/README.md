@@ -283,6 +283,26 @@ actions:
                 type: string
 ```
 
+Objects may have optional properties:
+
+```yaml{6}
+actions:
+  create:
+    arguments:
+      user:
+        type: object
+        properties:
+          name:
+            type: string
+          location:
+            type: object
+            properties:
+              street:
+                type: string
+                required: false
+              postcode:
+                type: string
+```
 
 ## Output
 
