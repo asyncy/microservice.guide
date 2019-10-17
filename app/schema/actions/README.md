@@ -116,6 +116,9 @@ An `action` **MUST** declare all arguments it accepts. Each argument, will have 
     "default": {
         "desc": "The default value if not provided by the user (**not** available for types `map` or `object`)"
     },
+    "variadic": {
+        "desc": "Whether the action accepts unspecified arguments. The default value for this is `false`"
+    },
     "pattern": {
         "desc": "[Read more](#patterns) (for `type: string` only)"
     },
