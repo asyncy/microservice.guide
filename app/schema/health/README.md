@@ -17,7 +17,7 @@ health:
     port: 5000
 ```
 
-## What's considered healthy
+### What's considered healthy
 
 Your health check **MUST** be a HTTP GET endpoint returning a `2xx` or `3xx` code when it's `healthy`.
 

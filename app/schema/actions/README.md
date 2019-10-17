@@ -74,6 +74,9 @@ Within a named `action`, the following fields are available:
     "http | rpc | format": {
         "desc": "How to call the action. [Read more](/schema/interface/)",
         "required": true
+    },
+    "deprecated": {
+        "desc": "Optional deprecation message if this action is deprecated."
     }
 }
 </p>
@@ -105,7 +108,10 @@ An `action` **MUST** declare all arguments it accepts. Each argument, will have 
         "required": true
     },
     "required": {
-        "desc": "Whether this argument is required or not. The default value for this is false"
+        "desc": "Whether this argument is required or not. The default value for this is `false`"
+    },
+    "deprecated": {
+        "desc": "Optional deprecation message if this argument is deprecated."
     },
     "default": {
         "desc": "The default value if not provided by the user (**not** available for types `map` or `object`)"
@@ -207,7 +213,7 @@ actions:
 
 The optional argument `list` must have a key `elements` with the type of its list elements.
 
-```yaml{6}
+```yaml{6-8}
 actions:
   colorize:
     arguments:
@@ -226,7 +232,7 @@ This service argument must be a list of integers.
 
 The argument `map` must have the keys `keys` and `values` with the respective types of the map.
 
-```yaml{6}
+```yaml{6-10}
 actions:
   colorize:
     arguments:
@@ -245,9 +251,28 @@ This service argument must be a `map` with `string` as keys and integers as valu
 
 <Badge text="actions.$.arguments.$.properties" type="tip"/> <Badge text="actions.$.events.$.arguments.$.properties" type="tip"/>
 
-The argument type `object` must have a `properties` entry.
+The argument type `object` must have a `properties` entry which a mapping of its properties.
+Within a property the following properties are available:
 
-```yaml{6}
+<json-table>
+<p>
+{
+    "type": {
+        "desc": "The type of output. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `object`, or `any`",
+        "required": true
+    },
+    "required": {
+        "desc": "Whether this argument is required or not. The default value for this is `true`"
+    },
+    "deprecated": {
+        "desc": "Optional deprecation message if this property is deprecated."
+    }
+}
+</p>
+</json-table>
+
+
+```yaml{6-12}
 actions:
   colorize:
     arguments:
@@ -265,7 +290,7 @@ actions:
 Objects may be nested:
 
 
-```yaml{6}
+```yaml{11-15}
 actions:
   create:
     arguments:
@@ -283,26 +308,24 @@ actions:
                 type: string
 ```
 
-Objects may have optional properties:
+Furthermore, Objects may have optional properties:
 
-```yaml{6}
+```yaml{9}
 actions:
   create:
     arguments:
       user:
         type: object
         properties:
-          name:
+          street:
             type: string
-          location:
-            type: object
-            properties:
-              street:
-                type: string
-                required: false
-              postcode:
-                type: string
+            required: false
+          postcode:
+            type: string
 ```
+
+When an Object field is marked as `deprecated`, consumers of the respective action
+will be warned when they access this field.
 
 ## Output
 

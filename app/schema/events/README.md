@@ -149,6 +149,9 @@ POST https://CLIENT/signups {
       "desc": "Optional and required inputs the action has. [Read more](#arguments)",
       "required": true
   },
+  "deprecated": {
+      "desc": "Optional deprecation message if this event is deprecated."
+  },
   "output": {
       "desc": "Type of data that the action returns. [Read more](#output)",
       "required": true
