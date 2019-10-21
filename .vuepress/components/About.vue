@@ -8,14 +8,14 @@
 <script>
 import OMSPage from './shared/OMSPage.vue'
 
-import WhyOMS from './pages/about/WhyOMS.vue'
+import WhyOms from './pages/about/WhyOMS.vue'
 import TwelveFactors from './pages/about/TwelveFactors.vue'
 
 export default {
   name: 'About',
   components: {
     OMSPage,
-    WhyOMS,
+    WhyOms,
     TwelveFactors
   }
 }
