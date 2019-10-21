@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Validate
 
 When ran in a directory of a microservice (a directory containing a

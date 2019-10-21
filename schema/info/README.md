@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Info
 
 This is present in the root of the document, and contains general information regarding your service.

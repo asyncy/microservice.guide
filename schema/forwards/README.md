@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Forwards
 
 To indicate to a cloud provider that traffic from the outside world (the

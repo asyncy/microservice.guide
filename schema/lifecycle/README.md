@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Lifecycle
 
 A service **SHOULD** define a startup command if it needs to initialise itself (for example, start a HTTP server).

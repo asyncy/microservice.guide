@@ -1,8 +1,9 @@
 <template>
-  <div class="slack-banner container-narrow">
-    <div class="slack">
-      <h3 class="title">Slack Channel</h3>
-      <div class="text">Join other developers and users on the OMS Slack Channel!</div>
+  <div class="spectrum-banner container-narrow">
+    <div class="spectrum">
+      <h3 class="title">Questions? Thoughts? Ideas?</h3>
+      <div class="text">Awesome, OMS is 100% community-driven so we'd love to
+      hear from you!</div>
     </div>
     <s-button
       primary
@@ -10,7 +11,7 @@
       lightShadow
       @click="go()"
     >
-      Join OMS Slack
+      Join us on Spectrum
     </s-button>
   </div>
 </template>
@@ -19,13 +20,13 @@
 import SButton from '../../shared/Button.vue'
 
 export default {
-  name: 'SlackBanner',
+  name: 'SpectrumBanner',
   components: {
     SButton
   },
   methods: {
     go() {
-      window.location.assign('https://asyncy.click/slack')
+      window.location.assign('https://spectrum.chat/open-microservices')
     }
   }
 }
@@ -35,7 +36,7 @@ export default {
 @require '../../../styles/palette'
 @require '../../../styles/fonts'
 
-.slack-banner
+.spectrum-banner
   display: flex
   align-items: center
   justify-content: space-between
@@ -44,7 +45,7 @@ export default {
   @media (min-width: $MQMobile + 1px)
     flex-direction: row
     padding-bottom: 0
-  .slack
+  .spectrum
     display: flex
     flex-direction: column
     align-items: flex-start

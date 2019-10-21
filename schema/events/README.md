@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Events
 
 <!-- TODO a nice svg illustration showing how this works -->

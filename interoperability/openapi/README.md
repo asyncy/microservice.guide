@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # OpenAPI
 
 The [`openapi2oms`](https://github.com/microservices/openapi2oms) tool helps

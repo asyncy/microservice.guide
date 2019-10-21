@@ -3,7 +3,7 @@
     <h2 class="title">OMS Spec</h2>
     <div class="content">
       <h2 class="title">OMS Spec</h2>
-      <div class="text">A Spec to write highly reusable self documenting microservices.</div>
+      <div class="text">A Spec to write highly reusable self-documenting microservices.</div>
       <s-button
         secondary
         arrow
@@ -17,38 +17,7 @@
       code
       class="microservice"
     >
-    omg: 1
-    
-    info:
-      version: 1.0.1
-      title: Calculator
-      description: This is a sample calculator
-      license:
-        name: MIT
-        url: https://opensource.org/licenses/MIT
-    
-    actions:
-      add:
-        help: Add two integers
-        http:
-          method: post
-          path: /add
-          port: 5000
-        arguments:
-          x:
-            type: int
-            required: true
-            in: requestBody
-          y:
-            type: int
-            required: true
-            in: requestBody
-          output:
-            type: int
-
-    lifecycle:
-      startup:
-        command: ['flask', 'run', '--host=0.0.0.0']
+      <slot />
     </computer>
   </div>
 </template>
@@ -65,7 +34,7 @@ export default {
   },
   methods: {
     go() {
-      window.location.assign('https://github.com/microservices/omg')
+      window.location.assign('https://github.com/microservices/oms')
     }
   }
 }

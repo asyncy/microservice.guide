@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Actions
 Defining actions is a way to organize which APIs are exposed 
 and how they are used within an application or platform.
@@ -106,10 +111,10 @@ An `action` **MUST** declare all arguments it accepts. Each argument, will have 
         "desc": "The default value if not provided by the user (**not** available for types `map` or `object`)"
     },
     "pattern": {
-        "desc": "[Read more](#pattern) (for `type: string` only)"
+        "desc": "[Read more](#patterns) (for `type: string` only)"
     },
     "enum": {
-        "desc": "[Read more](#enum) (for `type: enum` only)"
+        "desc": "[Read more](#enums) (for `type: enum` only)"
     },
     "range": {
         "desc": "[Read more](#range) (for `type: int|float` only)"
@@ -278,6 +283,26 @@ actions:
                 type: string
 ```
 
+Objects may have optional properties:
+
+```yaml{6}
+actions:
+  create:
+    arguments:
+      user:
+        type: object
+        properties:
+          name:
+            type: string
+          location:
+            type: object
+            properties:
+              street:
+                type: string
+                required: false
+              postcode:
+                type: string
+```
 
 ## Output
 

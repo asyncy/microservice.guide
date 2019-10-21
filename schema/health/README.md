@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Health Checks
 
 A service **SHOULD** provide health checks to ensure that the Platform knows of it's current state.

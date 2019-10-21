@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Interfacing
 
 Since the underlying execution strategy for an action can be a command, a HTTP request, or a RPC call, 

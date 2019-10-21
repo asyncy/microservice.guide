@@ -29,7 +29,19 @@ p a code
   font-weight 400
   color $accentColor
 
-h1, h2, h3, h4, h5, h6
+:not(pre)>code
+  color #535a6e
+  padding .25rem .5rem
+  margin 0
+  font-size .85em
+  background-color rgba(27,31,35,.05)
+  border-radius 3px
+
+.computer .frame .screen pre
+  font-size .7rem
+
+
+h1, h2, h3, h4, h5, h6 
   font-family: DM Bold Sans
   color: $secondaryColor
   border: none
@@ -108,6 +120,12 @@ h4
     background transparent
     color #fff
 
+.home
+  .content__default 
+    div.language-yaml
+      background-color transparent !important
+
+
 .theme-container
   .navbar
     position fixed
@@ -129,3 +147,4 @@ h4
   margin 0 auto
 
 @require './home'
+@require './highlight'

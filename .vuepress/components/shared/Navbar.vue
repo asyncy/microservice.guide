@@ -48,6 +48,7 @@ export default {
   },
 
   mounted () {
+    document.documentElement.classList.remove('is-clipped')
     const MOBILE_DESKTOP_BREAKPOINT = 719 // refer to config.styl
     const NAVBAR_VERTICAL_PADDING = parseInt(css(this.$el, 'paddingLeft')) + parseInt(css(this.$el, 'paddingRight'))
     const handleLinksWrapWidth = () => {
@@ -88,7 +89,18 @@ function css (el, property) {
 $navbar-vertical-padding = 4rem
 $navbar-horizontal-padding = 8rem
 
-.home
+.docs
+  .navbar
+    border-bottom 1px solid #eef3fa !important 
+    padding 0 !important
+    height 4rem !important
+    @media (min-width: ($MQMobile + 1px))
+      height 7rem !important
+      padding 2.5rem 8rem !important
+
+
+.home,
+.docs
   .navbar
     padding $navbar-vertical-padding $navbar-horizontal-padding
     display flex

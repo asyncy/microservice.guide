@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Anatomy
 
 Here's a sample `microservice.yml` file:

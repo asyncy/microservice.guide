@@ -24,7 +24,7 @@
       v-if="repoLink"
       secondary 
       arrow 
-      url="https://github.com/microservices/microservice.guide"
+      url="https://github.com/microservices/openmicroservices.org"
       class="repo-link"
     >
       Edit on Github
@@ -123,6 +123,10 @@ export default {
 .home
   .nav-links
     display inline-block
+
+.home,
+.docs
+  .nav-links
     @media (max-width: $MQMobile)
       display flex
       flex-direction column
@@ -136,22 +140,20 @@ export default {
       @media (max-width: $MQMobile)
         font-size 1rem
     .nav-item
-      margin-right 4rem
+      margin-right 2.625rem
       margin-bottom 1.5rem
       position relative
       display inline-block
       line-height 2rem
-      &:first-child
-        margin-left 0
+      margin-left 0
       @media (max-width: $MQNarrow)
         margin-right 1rem  
       @media (max-width: $MQMobile)
         margin-right 0
-    .repo-link
-      margin-left 1.5rem
 
 @media (max-width: $MQMobile)
-  .home
+  .home,
+  .docs
     .nav-links
       .nav-item, .repo-link
         margin-left 0
@@ -163,7 +165,8 @@ export default {
         border-top 1px solid #E9E9EE
 
 @media (min-width: $MQMobile)
-  .home
+  .home,
+  .docs
     .nav-links a
       &:hover, &.router-link-active
         color $textColor

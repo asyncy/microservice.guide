@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Metrics <Badge text="FUTURE" type="error" vertical="middle"/>
 
 Services **SHOULD** support metric delivery to

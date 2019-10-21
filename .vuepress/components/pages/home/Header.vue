@@ -1,6 +1,7 @@
 <template>
   <div class="home-header">
-    <h1 class="main-title">Turn containers into cloud-native libraries.</h1>
+    <h1 class="main-title">Turn containers into libraries.</h1>
+    <h2 class="main-subtitle">A declarative way to define and expose the events, actions and APIs inside containerized software.</h2>
     <s-button 
       class="get-started" 
       primary 
@@ -48,7 +49,7 @@
         </div>
         <div class="content">
           <h4 class="title">Run anywhere</h4>
-          <div class="text">Run anywhere - from your terminal to slack. Tools for documentation and testing come free &#128521;</div>
+          <div class="text">Run anywhere - from your terminal to Slack. Tools for documentation and testing come free &#128521;</div>
         </div>
       </div>
     </div>
@@ -85,12 +86,24 @@ export default {
     font-size 1.5rem
     line-height 2rem
     text-align center
-    margin-bottom 2.25rem
+    margin-bottom 1rem
     @media (min-width: $MQMobile + 1px)
       font-size 3.125rem
       line-height 4rem
-      width 50%
-      margin-bottom 3.5rem
+      width 60%
+      margin-bottom 1rem
+  .main-subtitle
+    font-family "Nunito"
+    font-size 1rem
+    font-weight normal
+    margin-bottom 2.25rem
+    text-align center
+    @media (min-width: $MQMobile + 1px)
+      font-size 1.35rem
+      font-weight normal
+      line-height 1.5rem
+      width 100%
+      margin-bottom 2rem
   .cols
     display flex
     align-items flex-start

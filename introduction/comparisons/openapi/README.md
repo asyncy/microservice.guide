@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Comparison with OpenAPI (fka Swagger)
 
 The OMS and

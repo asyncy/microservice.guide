@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Volumes
 
 Depending on the implementation of the service it **MAY NOT** have access to any volume.

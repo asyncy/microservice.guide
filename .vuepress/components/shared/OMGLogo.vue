@@ -8,7 +8,7 @@
     <div v-if="long" class="text">
       <div :class="[`${dark ? 'dark' : light ? 'light' : 'dark'}`]"><span :class="[`${blue ? 'blue' : green ? 'seafoam' : 'blue'}`]">O</span>pen</div>
       <div :class="[`${dark ? 'dark' : light ? 'light' : 'dark'}`]"><span :class="[`${blue ? 'blue' : green ? 'seafoam' : 'blue'}`]">M</span>icroservice</div>
-      <div :class="[`${dark ? 'dark' : light ? 'light' : 'dark'}`]"><span :class="[`${blue ? 'blue' : green ? 'seafoam' : 'blue'}`]">G</span>uide</div>
+      <div :class="[`${dark ? 'dark' : light ? 'light' : 'dark'}`]"><span :class="[`${blue ? 'blue' : green ? 'seafoam' : 'blue'}`]">S</span>pecification</div>
     </div>
   </div>
 </template>

@@ -1,5 +1,6 @@
 <template>
   <div class="partners">
+    <h2 class="title">Seamlessly integrates with all the tools you already use...</h2>
     <div class="list">
       <div
         v-for="(partner, idx) in partners"
@@ -22,9 +23,9 @@ export default {
     partners: [
       'gcp',
       'gh',
-      'docker',
+      'containerd',
       'k8s',
-      'rkt'
+      'crio'
     ]
   })
 }
@@ -42,10 +43,12 @@ export default {
   @media (min-width: $MQMobile + 1px)
     margin 7.5rem 0
   .title
-    font-family DM Bold Sans
-    font-size 2.375rem
+    font-size 2rem
+    font-weight normal
     color $secondaryColor
-    margin-bottom 3.5rem
+    margin-bottom 2rem
+    text-align center 
+    width 50%
   .list
     display flex
     flex-wrap wrap

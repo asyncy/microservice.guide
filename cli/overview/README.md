@@ -1,3 +1,8 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
 # Overview
 
 The Open Microservice Specification command-line interface allows you to

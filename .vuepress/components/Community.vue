@@ -5,6 +5,9 @@
       <community-repositories class="container-narrow"/>
     </section>
     <community-libraries class="container-narrow"/>
+    <section class="bg-spectrum">
+      <spectrum-banner class="container-narrow"/>
+    </section>
   </OMGPage>
 </template>
 
@@ -14,7 +17,7 @@ import OMGPage from './shared/OMGPage.vue'
 import CommunityHeader from './pages/community/Header.vue'
 import CommunityRepositories from './pages/community/Repositories.vue'
 import CommunityLibraries from './pages/community/Libraries.vue'
-import SlackBanner from './pages/community/SlackBanner.vue'
+import SpectrumBanner from './pages/community/SpectrumBanner.vue'
 
 export default {
   name: 'Community',
@@ -23,7 +26,7 @@ export default {
     CommunityHeader,
     CommunityRepositories,
     CommunityLibraries,
-    SlackBanner
+    SpectrumBanner
   }
 }
 </script>
@@ -31,8 +34,9 @@ export default {
 <style lang="stylus" scoped>
 .bg-gray
   background #F9FBFD
-.slack-bg
-  background url('/assets/img/slack-bg.png') bottom right no-repeat #EEF3FA
+.bg-spectrum
+  background #EEF3FA
   border-radius 10px
-  margin 5rem auto 6.25rem auto !important
+  margin 5rem auto 0 auto !important
+  padding 3.5rem 
 </style>

@@ -23,13 +23,13 @@ export default {
     factors: [
       {
         title: 'Reusable',
-        desc: 'Write one use forever. Can share between your team or open it to millions of developers.'
+        desc: 'Write once, use forever. Share between your team or open it up to millions of developers.'
       }, {
-        title: 'Self documenting',
-        desc: 'Use any of our libraries that will autogenerate the documentation required for anyone to use your microservice.'
+        title: 'Self-documenting',
+        desc: 'Use any of our libraries to autogenerate the interface for anyone to use your microservice.'
       }, {
         title: 'Discoverable',
-        desc: `Its like Java docs but for your microservice. With OMS you don't have to spend hours on the white board explaining how your service works.`
+        desc: `With OMS you don't have to spend hours on the whiteboard explaining how your service works.`
       }
     ]
   })

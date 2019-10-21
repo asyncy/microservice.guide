@@ -1,3 +1,9 @@
+---
+layout: Docs
+home: false
+sidebar: true
+---
+
 # Overview
 
 The Open Microservice Specification is an open standard for annotating reusable
