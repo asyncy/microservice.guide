@@ -2,8 +2,8 @@
   <div class="oms-spec">
     <h2 class="title">OMS Spec</h2>
     <div class="content">
-      <h2 class="title">OMS Spec</h2>
-      <div class="text">A Spec to write highly reusable self-documenting microservices.</div>
+      <h2 class="title">OMS</h2>
+      <div class="text">A specification to write highly reusable self-documenting microservices.</div>
       <s-button
         secondary
         arrow
