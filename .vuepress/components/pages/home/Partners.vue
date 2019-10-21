@@ -1,6 +1,6 @@
 <template>
   <div class="partners">
-    <h2 class="title">Seamlessly integrates with all the tools you already use...</h2>
+    <h2 class="title">Integrated with all the needed tools</h2>
     <div class="list">
       <div
         v-for="(partner, idx) in partners"
