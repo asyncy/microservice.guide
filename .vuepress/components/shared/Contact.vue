@@ -1,8 +1,8 @@
 <template>
   <div class="contact container large">
-    <h2 class="title">Contribute With OMG!</h2>
+    <h2 class="title">Join the discussion</h2>
     <p class="text">
-      We are under development and open to contribution. 100% open source.
+      We are under development and open to contribution.<br>100% open source.
       <br>
       <!-- Hidden until joined
         A part of the Linux Foundation and under the CNCF.
@@ -23,7 +23,7 @@
         @click="go('spectrum')"
         class="spectrum"
       >
-        Join OMG on Spectrum
+        Join OMG Spectrum
       </s-button>
     </div>
     <!--
@@ -100,7 +100,11 @@ export default {
 
     .spectrum {
       background: #C5DCFC;
+      box-shadow: 0px 5px 10px rgba(56, 87, 159, 0.3);
       color: $secondaryColor;
+      &:hover {
+        background: #B9D4F9;
+      }
     }
 
     .contribute {

@@ -1,5 +1,5 @@
 <template>
-  <div class="compare">
+  <div class="compare container">
     <h2 class="title-desktop">Compare Spec</h2>
     <div class="table">
       <div class="header">
@@ -97,9 +97,10 @@
   display flex
   flex-direction column
   align-items center
-  margin 0 .5rem 5rem
-  @media (min-width: $MQNarrow + 1px)
-    margin 0 2rem 5rem
+  // margin 0 .5rem 5rem
+  margin 0 auto 5rem
+  // @media (min-width: $MQNarrow + 1px)
+  //   margin 0 2rem 5rem
   .divider-h
   .divider-v
     background #C5DCFC

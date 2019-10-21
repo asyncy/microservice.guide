@@ -1,7 +1,7 @@
 <template>
   <div class="home-header">
     <h1 class="main-title">Turn containers into libraries.</h1>
-    <h2 class="main-subtitle">A declarative way to define and expose the events, actions and APIs inside containerized software.</h2>
+    <h2 class="main-subtitle">Define and expose the events, actions, and API's inside containerized software.</h2>
     <s-button 
       class="get-started" 
       primary 
@@ -93,7 +93,7 @@ export default {
       width 60%
       margin-bottom 1rem
   .main-subtitle
-    font-family "Nunito"
+    font-family DM Sans
     font-size 1rem
     font-weight normal
     margin-bottom 2.25rem
@@ -102,7 +102,7 @@ export default {
       font-size 1.35rem
       font-weight normal
       line-height 1.5rem
-      width 100%
+      width 50%
       margin-bottom 2rem
   .cols
     display flex
