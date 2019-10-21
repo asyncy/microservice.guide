@@ -124,6 +124,10 @@ export default {
   .nav-links
     display inline-block
 
+.nav-links
+  .repo-link
+    margin-left 0
+
 .home,
 .docs
   .nav-links

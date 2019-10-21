@@ -101,7 +101,7 @@ export default {
     @media (min-width: $MQMobile + 1px)
       font-size 1.35rem
       font-weight normal
-      line-height 1.5rem
+      line-height 2rem
       width 50%
       margin-bottom 2rem
   .cols
