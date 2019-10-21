@@ -1,7 +1,6 @@
 <template>
   <div class="compare">
     <h2 class="title-desktop">Compare Spec</h2>
-    <h4 class="title-mobile">Compare Spec</h4>
     <div class="table">
       <div class="header">
         <div class="heading spacer" />
@@ -50,6 +49,7 @@
     </div>
 
     <!-- MOBILE -->
+    <h4 class="title-mobile">Compare Spec</h4>
     <div class="table-mobile">
       <div class="selectors">
         <div class="selector" v-for="(l, idx) in logos" :class="{'active': selected === l.name}" @click="selected = l.name">
