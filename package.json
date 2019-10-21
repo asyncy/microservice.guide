@@ -1,5 +1,5 @@
 {
-  "name": "microservice.guide",
+  "name": "openmicroservices.org",
   "version": "0.0.1",
   "description": "A guide to designing platform-agnostic microservices that are highly reusable.",
   "main": "index.js",
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microservices/microservice.guide.git"
+    "url": "git+https://github.com/microservices/openmicroservices.org.git"
   },
   "author": "",
   "bugs": {
-    "url": "https://github.com/microservices/microservice.guide/issues"
+    "url": "https://github.com/microservices/openmicroservices.org/issues"
   },
-  "homepage": "https://github.com/microservices/microservice.guide#readme",
+  "homepage": "https://github.com/microservices/openmicroservices.org#readme",
   "devDependencies": {
     "vuepress": "1.2.0"
   },

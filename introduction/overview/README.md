@@ -16,7 +16,7 @@ Spring Boot, Go kit, etc. It's up to the developer to decide on the underlying
 infrastructure.
 
 If you'd like to contribute, please feel free to
-[reach out](https://microservice.guide/#contact)!
+[reach out](mailto:info@openmicroservices.org)!
 
 ### Microservice Definition
 

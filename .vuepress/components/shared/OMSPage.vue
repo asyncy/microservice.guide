@@ -21,7 +21,7 @@ import Contact from './Contact.vue'
 import Footer from './Footer.vue'
 
 export default {
-  name: 'OMGPage',
+  name: 'OMSPage',
   components: {
     Navbar,
     Contact,

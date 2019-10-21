@@ -1,5 +1,5 @@
 <template>
-  <div class="why-omg">
+  <div class="why-oms">
     <div class="content">
       <h1 class="title">
         Why OMS?
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'WhyOmg'
+  name: 'WhyOMS'
 }
 </script>
 

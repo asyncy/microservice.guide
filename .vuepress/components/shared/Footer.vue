@@ -2,7 +2,7 @@
   <div class="container">
     <div class="footer">
       <div class="left">
-        <OMGLogo green long light />
+        <OMSLogo green long light />
       </div>
       <div class="center">
         
@@ -19,13 +19,13 @@
 
 <script>
 import NavLink from './NavLink.vue'
-import OMGLogo from './OMGLogo.vue'
+import OMSLogo from './OMSLogo.vue'
 
 export default {
   name: 'Footer',
   components: { 
     NavLink,
-    OMGLogo
+    OMSLogo
   },
   computed: {
     repoLink: function () {

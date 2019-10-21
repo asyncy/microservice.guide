@@ -1,9 +1,12 @@
 <template>
-  <div class="oms-spec">
-    <h2 class="title">OMS Spec</h2>
+  <div class="oms-app">
+    <h2 class="title">Test your microservice with OMS</h2>
+    <div class="illustration">
+      <img src="/assets/img/oms-app.png" alt="OMS App design" >
+    </div>
     <div class="content">
-      <h2 class="title">OMS Spec</h2>
-      <div class="text">A Spec to write highly reusable self-documenting microservices.</div>
+      <h2 class="title">Test your microservice with OMS</h2>
+      <div class="text">The open standard for reuse active we welcome your input and contributions in GitHub.</div>
       <s-button
         secondary
         arrow
@@ -13,28 +16,20 @@
         View on GitHub
       </s-button>
     </div>
-    <computer
-      code
-      class="microservice"
-    >
-      <slot />
-    </computer>
   </div>
 </template>
 
 <script>
 import SButton from '../../shared/Button.vue'
-import Computer from '../../shared/Computer.vue'
 
 export default {
-  name: 'OMSSpec',
+  name: 'OMSApp',
   components: {
-    SButton,
-    Computer
+    SButton
   },
   methods: {
     go() {
-      window.location.assign('https://github.com/microservices/oms')
+      window.location.assign('https://github.com/microservices/oms/tree/master/packages/ui')
     }
   }
 }
@@ -44,58 +39,53 @@ export default {
 @require '../../../styles/palette'
 @require '../../../styles/fonts'
 
-.oms-spec
+.oms-app
   background $lightBgColor
-  border-radius 10px
   display flex
   flex-direction column
-  padding-bottom 3.5rem
-  @media (min-width: $MQMobile + 1px)
-    padding-bottom 17rem
-    margin: 0 2rem
+  padding: 3.5rem 0
   .title
     display block
     text-align center
     margin-bottom 2.25rem
     padding 0 2.625rem
   @media (min-width: $MQMobile + 1px)
+    padding: 7.5rem 0
     flex-direction row
     align-items center
-    justify-content flex-end
+    justify-content flex-start
     .title
       padding initial
       text-align left
       display none
   .title
     text-transform capitalize
-    order 1
-    margin-top 4rem
-    margin-bottom 1.5rem
+  .illustration
+    padding: 0
+    background none
+    border-radius 0
+    box-shadow none
     @media (min-width: $MQMobile + 1px)
-      order 0
-  .microservice
-    width 100%
-    order 2
-    @media (min-width: $MQMobile + 1px)
-      order 0
-      margin-top -2.75rem
-      margin-right -7rem
-      width 60%
+      padding: 1.125rem
+      background white
+      flex-basis 60%
+      border-radius 10px
+      box-shadow 0px 24.1047px 57.8512px rgba(39, 69, 104, 0.1)
+    img 
+      width 100%
+      max-width 100%
   .content
     align-items center
     text-align: center;
     padding: 0 1rem;
-    order 3
-    @media (min-width: $MQMobile + 1px)
-      order 0
     .title
       display none
     button 
       margin 0 auto
     @media (min-width: $MQMobile + 1px)
       align-items flex-start
+      margin-left 5.625rem
       max-width 18.75rem
-      margin-right 12.25rem
       text-align left
       padding 0
       .title

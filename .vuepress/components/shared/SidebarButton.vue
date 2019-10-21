@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar-button">
-    <OMGLogo class="logo" small @logo-clicked="$router.push('/')"/>
+    <OMSLogo class="logo" small @logo-clicked="$router.push('/')"/>
     <div :class="['burger', { open }]" @click="toggle()">
       <div class="long"></div>
       <div class="short"></div>
@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import OMGLogo from './OMGLogo.vue'
+import OMSLogo from './OMSLogo.vue'
 
 export default {
   name: 'SidebarButton',
   components: {
-    OMGLogo
+    OMSLogo
   },
   data: () => ({
     open: false

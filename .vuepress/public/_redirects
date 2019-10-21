@@ -1,5 +1,7 @@
 # Redirect domain aliases to primary domain
-https://microservices.guide/* https://microservice.guide/:splat 301!
+https://microservices.guide/* https://openmicroservices.guide/:splat 301!
+https://microservice.guide/* https://openmicroservices.org/:splat 301!
+https://openmicroservice.guide/* https://openmicroservices.org/:splat 301!
 
 # Redirect old introduction structure to the new one
 /cli /cli/overview

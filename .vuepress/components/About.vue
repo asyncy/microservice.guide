@@ -1,21 +1,21 @@
 <template>
-  <OMGPage>
-    <why-omg class="container"/>
+  <OMSPage>
+    <why-oms class="container"/>
     <twelve-factors class="container"/>
-  </OMGPage>
+  </OMSPage>
 </template>
 
 <script>
-import OMGPage from './shared/OMGPage.vue'
+import OMSPage from './shared/OMSPage.vue'
 
-import WhyOmg from './pages/about/WhyOMG.vue'
+import WhyOMS from './pages/about/WhyOMS.vue'
 import TwelveFactors from './pages/about/TwelveFactors.vue'
 
 export default {
   name: 'About',
   components: {
-    OMGPage,
-    WhyOmg,
+    OMSPage,
+    WhyOMS,
     TwelveFactors
   }
 }
