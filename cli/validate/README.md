@@ -14,13 +14,13 @@ oms validate
 
 #### Example output
 
-##### Valid `microservice.yml`
+Valid `microservice.yml`:
 
 ```sh
 No errors
 ```
 
-##### Invalid `microservice.yml`
+Invalid `microservice.yml`:
 
 ```sh
 actions.add.arguments.x should have required property 'type'
