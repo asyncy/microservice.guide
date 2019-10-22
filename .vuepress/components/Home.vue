@@ -8,9 +8,9 @@
       <ThreeFactors />
       <Partners />
     </div>
-    <OMSApp/>
+    <OMSApp />
     <CompareSpec />
-  </OMGPage>
+  </OMSPage>
 </template>
 
 <script>

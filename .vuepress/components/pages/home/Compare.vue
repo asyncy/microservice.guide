@@ -310,7 +310,7 @@ export default {
     }
   },
   data: () => ({
-    selected: 'Open Microservice Guide',
+    selected: 'Open Microservices',
     rowNames: [
       'Protocol',
       'Subscriptions',
@@ -353,7 +353,7 @@ export default {
         'graphql.org'
       ]
     }, {
-      heading: 'Open Microservice Guide',
+      heading: 'Open Microservices',
       main: true,
       cols: [
         'Any',
@@ -361,7 +361,7 @@ export default {
         1,
         'Containers',
         'Turn containers into cloud-native libraries',
-        'microservice.guide'
+        'openmicroservices.org'
       ]
     }],
     logos: [{
@@ -374,7 +374,7 @@ export default {
       name: 'GraphQL',
       src: 'gql.svg'
     }, {
-      name: 'Open Microservice Guide',
+      name: 'Open Microservice',
       src: 'logo.svg'
     }]
   })
