@@ -3,6 +3,7 @@ layout: Docs
 home: false
 sidebar: true
 ---
+
 # Anatomy
 
 Here's a sample `microservice.yml` file:
@@ -87,9 +88,10 @@ info:
 The `info` field specifies general information about this service, such as
 contact, licence, and it's version.
 
-::: tip 📖 Read more More information about the `info` field is found
-[here](/schema/info/).  
+::: tip &#128214; Read more 
+More information about the `info` field is found [here](/schema/info/). 
 :::
+
 
 ### lifecycle
 
@@ -104,8 +106,9 @@ microservice is started by an underlying container framework, such as Docker,
 the Platform must use this command instead of the ENTRYPOINT value in the
 Dockerfile.
 
-::: tip 📖 Read more More information about the `lifecycle` field is found
-[here](/schema/lifecycle/). :::
+::: tip &#128214; Read more 
+More information about the `lifecycle` field is found [here](/schema/lifecycle/). 
+:::
 
 ### health
 
@@ -120,8 +123,9 @@ The `health` field describes the health check endpoint of your microservice.
 Before starting your microservice, the CLI will check if the service is healthy
 before running any action.
 
-::: tip 📖 Read more More information about the `health` field is found
-[here](/schema/health/). :::
+::: tip &#128214; Read more 
+More information about the `health` field is found [here](/schema/health/). 
+:::
 
 ### actions
 
@@ -146,8 +150,9 @@ execution strategy. In the case above, the action `convert` uses the `http`
 execution strategy, i.e. the Platform **MUST** make a HTTP call to the to the
 service, respecting the configuration under the `http` section.
 
-::: tip 📖 Read more More information about the `actions` field is found
-[here](/schema/actions/). :::
+::: tip &#128214; Read more
+More information about the `actions` field is found [here](/schema/actions/).
+:::
 
 ### events
 
@@ -163,5 +168,6 @@ actions:
 
 The `events` field describes various events that an action can publish.
 
-::: tip 📖 Read more More information about the `events` field is found
-[here](/schema/events/). :::
+::: tip &#128214; Read more 
+More information about the `events` field is found [here](/schema/events/).
+:::
