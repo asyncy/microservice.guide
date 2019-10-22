@@ -3,12 +3,13 @@ layout: Docs
 home: false
 sidebar: true
 ---
+
 # Anatomy
 
 Here's a sample `microservice.yml` file:
 
 ```yaml
-omg: 1
+oms: 1
 info:
   version: 1.0.1
   title: Currency Converter
@@ -59,13 +60,14 @@ actions:
 
 Let's break it down a bit.
 
-### omg
+### oms
 
 ```yaml
-omg: 1
+oms: 1
 ```
 
-The `omg` field specifies which version of the OMG revision this file is written in.
+The `oms` field specifies which version of the OMS revision this file is written
+in.
 
 ### info
 
@@ -83,12 +85,13 @@ info:
     url: https://opensource.org/licenses/MIT
 ```
 
-The `info` field specifies general information about this service, such as contact, licence, and it's
-version.
+The `info` field specifies general information about this service, such as
+contact, licence, and it's version.
 
-::: tip 📖 Read more
-More information about the `info` field is found [here](/schema/info/).  
+::: tip &#128214; Read more 
+More information about the `info` field is found [here](/schema/info/). 
 :::
+
 
 ### lifecycle
 
@@ -98,12 +101,13 @@ lifecycle:
     command: ['java', '-jar', 'CurrencyApp.jar']
 ```
 
-The `lifecycle` field describes the lifecycle of your microservice. When your microservice is
-started by an underlying container framework, such as Docker, the Platform must use this command
-instead of the ENTRYPOINT value in the Dockerfile.
+The `lifecycle` field describes the lifecycle of your microservice. When your
+microservice is started by an underlying container framework, such as Docker,
+the Platform must use this command instead of the ENTRYPOINT value in the
+Dockerfile.
 
-::: tip 📖 Read more
-More information about the `lifecycle` field is found [here](/schema/lifecycle/).
+::: tip &#128214; Read more 
+More information about the `lifecycle` field is found [here](/schema/lifecycle/). 
 :::
 
 ### health
@@ -115,10 +119,12 @@ health:
     port: 8080
 ```
 
-The `health` field describes the health check endpoint of your microservice. Before starting your microservice, the CLI will check if the service is healthy before running any action.
+The `health` field describes the health check endpoint of your microservice.
+Before starting your microservice, the CLI will check if the service is healthy
+before running any action.
 
-::: tip 📖 Read more
-More information about the `health` field is found [here](/schema/health/).
+::: tip &#128214; Read more 
+More information about the `health` field is found [here](/schema/health/). 
 :::
 
 ### actions
@@ -138,12 +144,13 @@ actions:
       properties: ...
 ```
 
-The `actions` field describes how to interact with this service. It's important to note that
-every action specified here might have a different underlying execution strategy. In the case
-above, the action `convert` uses the `http` execution strategy, i.e. the Platform **MUST** make a
-HTTP call to the to the service, respecting the configuration under the `http` section.
+The `actions` field describes how to interact with this service. It's important
+to note that every action specified here might have a different underlying
+execution strategy. In the case above, the action `convert` uses the `http`
+execution strategy, i.e. the Platform **MUST** make a HTTP call to the to the
+service, respecting the configuration under the `http` section.
 
-::: tip 📖 Read more
+::: tip &#128214; Read more
 More information about the `actions` field is found [here](/schema/actions/).
 :::
 
@@ -161,6 +168,6 @@ actions:
 
 The `events` field describes various events that an action can publish.
 
-::: tip 📖 Read more
+::: tip &#128214; Read more 
 More information about the `events` field is found [here](/schema/events/).
 :::

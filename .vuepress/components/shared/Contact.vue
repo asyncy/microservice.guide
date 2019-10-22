@@ -15,7 +15,7 @@
         @click="go('contribute')"
         class="contribute"
       >
-        Contribute to OMG
+        Contribute to OMS
       </s-button>
       <s-button
         primary
@@ -23,7 +23,7 @@
         @click="go('spectrum')"
         class="spectrum"
       >
-        Join OMG Spectrum
+        Join OMS on Spectrum
       </s-button>
     </div>
     <!--
@@ -45,7 +45,7 @@ export default {
     go(path) {
       switch (path) {
         case 'contribute':
-          window.location.assign('https://github.com/microservices/omg')
+          window.location.assign('https://github.com/microservices/oms')
           break
         case 'spectrum':
           window.location.assign('https://spectrum.chat/open-microservices')

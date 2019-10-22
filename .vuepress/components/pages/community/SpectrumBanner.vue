@@ -2,7 +2,7 @@
   <div class="spectrum-banner container-narrow">
     <div class="spectrum">
       <h3 class="title">Questions? Thoughts? Ideas?</h3>
-      <div class="text">Awesome, OMG is 100% community-driven so we'd love to
+      <div class="text">Awesome, OMS is 100% community-driven so we'd love to
       hear from you!</div>
     </div>
     <s-button

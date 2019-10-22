@@ -3,14 +3,17 @@ layout: Docs
 home: false
 sidebar: true
 ---
+
 # Events
 
 <!-- TODO a nice svg illustration showing how this works -->
 
-A Service **MAY** have an action that publishes events asynchronously.
-The Platform would subscribe to events and the Service will publish events back to the Platform.
+A Service **MAY** have an action that publishes events asynchronously. The
+Platform would subscribe to events and the Service will publish events back to
+the Platform.
 
-> <small>Intended for webhooks, pubsub, user interactions and streaming IoT data.</small>
+> <small>Intended for webhooks, pubsub, user interactions and streaming IoT
+> data.</small>
 
 [[toc]]
 
@@ -43,8 +46,8 @@ actions:
       login:
         help: When a user logs in.
         http:
-          <<: *http  # yaml magic to reuse the object declared above
-        output: 
+          <<: *http # yaml magic to reuse the object declared above
+        output:
           <<: *user
       logout:
         help: When a user logs out.
@@ -54,8 +57,9 @@ actions:
           <<: *user
 ```
 
+1. **Subscribe**. The Platform subscribes to an event by making a HTTP request
+   to the Service.
 
-1. **Subscribe**. The Platform subscribes to an event by making a HTTP request to the Service.
 ```shell
 # Platform to Service
 POST http://SERVICE/subscribe {
@@ -66,7 +70,9 @@ POST http://SERVICE/subscribe {
 }
 ```
 
-The Service **MUST** store this subscription information. Here's a Python snippet depicting this:
+The Service **MUST** store this subscription information. Here's a Python
+snippet depicting this:
+
 ```python
 subscriptions = {}
 
@@ -85,7 +91,8 @@ def publish(event, data):
             # Make a HTTP POST request to subscription['endpoint']
 ```
 
-The Service then makes a HTTP POST request to send the event to the Platform using the [CloudEvents spec](https://github.com/cloudevents/spec).
+The Service then makes a HTTP POST request to send the event to the Platform
+using the [CloudEvents spec](https://github.com/cloudevents/spec).
 
 ```shell
 # Service to Platform
@@ -98,13 +105,13 @@ POST https://CLIENT/signups {
   "contentType" : "text/json",
   "data" : {  # event data
     "name": "Steve",
-    "email": "no-reply@microservice.guide"
+    "email": "no-reply@openmicroservices.org"
   }
 }
 ```
 
-> <small>This allows the Platform to subscribe to many events. 
-All subscriptions will have a unique destination to publish events.</small>
+> <small>This allows the Platform to subscribe to many events. All subscriptions
+> will have a unique destination to publish events.</small>
 
 ## Overview
 
@@ -150,7 +157,6 @@ All subscriptions will have a unique destination to publish events.</small>
 </p>
 </json-table>
 
-
 **Example Services**
 
 Below are a few services that publish events.
@@ -160,21 +166,21 @@ Below are a few services that publish events.
 - [Twitter: Streaming tweets](https://github.com/microservice/twitter/blob/master/microservice.yml)
   - Stream tweets filtered by a hashtag.
 
-
 ## Arguments
 
 <SBadge text="actions.$.events.$.arguments" type="info"/>
 
-Subscribing to an event **MAY** include `arguments` which can be used to define certain parameters
-concerning the subscription. For example, filtering the content before the event is published.
+Subscribing to an event **MAY** include `arguments` which can be used to define
+certain parameters concerning the subscription. For example, filtering the
+content before the event is published.
 
 See [Action Arguments](/schema/actions/#arguments) for details.
-
 
 ## Output
 
 <SBadge text="actions.$.events.$.output" type="info"/>
 
-The event published to the Platform **MUST** include the `output` detailing the structure of the event data published.
+The event published to the Platform **MUST** include the `output` detailing the
+structure of the event data published.
 
 See [Action Output](/schema/actions/#output) for details.

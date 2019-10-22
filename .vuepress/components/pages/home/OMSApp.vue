@@ -1,11 +1,11 @@
 <template>
-  <div class="omg-app">
-    <h2 class="title">Test your microservice with OMG</h2>
+  <div class="oms-app">
+    <h2 class="title">Test your microservice with OMS</h2>
     <div class="illustration">
-      <img src="/assets/img/omg-app.png" alt="OMG App design" >
+      <img src="/assets/img/oms-app.png" alt="OMS App design" >
     </div>
     <div class="content">
-      <h2 class="title">Test your microservice with OMG</h2>
+      <h2 class="title">Test your microservice with OMS</h2>
       <div class="text">The open standard for reuse active we welcome your input and contributions in GitHub.</div>
       <s-button
         secondary
@@ -23,13 +23,13 @@
 import SButton from '../../shared/Button.vue'
 
 export default {
-  name: 'OMGApp',
+  name: 'OMSApp',
   components: {
     SButton
   },
   methods: {
     go() {
-      window.location.assign('https://github.com/microservices/omg/tree/master/packages/omg-ui')
+      window.location.assign('https://github.com/microservices/oms/tree/master/packages/ui')
     }
   }
 }
@@ -39,7 +39,7 @@ export default {
 @require '../../../styles/palette'
 @require '../../../styles/fonts'
 
-.omg-app
+.oms-app
   background $lightBgColor
   display flex
   flex-direction column

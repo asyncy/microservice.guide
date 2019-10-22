@@ -1,9 +1,9 @@
 module.exports = {
-  title: 'Open Microservice Guide',
+  title: 'Open Microservice Specification',
   description: 'The open standard for reusable microservices',
   head: [['link', { rel: 'icon', type: 'image/png', href: '/favicon.ico' }]],
   themeConfig: {
-    repo: 'microservices/microservice.guide',
+    repo: 'microservices/openmicroservices.org',
     repoLabel: 'Edit on Github',
     editLinkText: 'Edit this page on GitHub',
     editLinks: true,

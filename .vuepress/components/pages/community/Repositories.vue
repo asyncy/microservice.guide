@@ -1,7 +1,7 @@
 <template>
   <div class="community-repos">
     <div class="ui">
-      <h3 class="title">OMG UI</h3>
+      <h3 class="title">OMS UI</h3>
       <p class="text">
         We build a UI tool so that you can test and build your microservices flawlessly.
       </p>
@@ -15,7 +15,7 @@
       </s-button>
     </div>
     <div class="cli">
-      <h3 class="title">OMG CLI</h3>
+      <h3 class="title">OMS CLI</h3>
       <p class="text">
         We built command line tools that can help you test and deploy your microservices.
       </p>
@@ -46,10 +46,10 @@ export default {
       // we can redirect to the exact package.
       switch (target) {
         case 'ui':
-          window.location.assign('https://github.com/microservices/omg')
+          window.location.assign('https://github.com/microservices/oms/tree/master/packages/oms')
           break
         case 'cli':
-          window.location.assign('https://github.com/microservices/omg')
+          window.location.assign('https://github.com/microservices/oms/tree/master/packages/oms')
           break
       }
     }

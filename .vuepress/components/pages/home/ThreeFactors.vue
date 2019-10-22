@@ -29,7 +29,7 @@ export default {
         desc: 'Use any of our libraries to autogenerate the interface for anyone to use your microservice.'
       }, {
         title: 'Discoverable',
-        desc: `With OMG you don't have to spend hours on the whiteboard explaining how your service works.`
+        desc: `With OMS you don't have to spend hours on the whiteboard explaining how your service works.`
       }
     ]
   })

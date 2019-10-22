@@ -1,5 +1,5 @@
 <template>
-  <OMGPage>
+  <OMSPage>
     <community-header class="container"/>
     <section class="bg-gray">
       <community-repositories class="container-narrow"/>
@@ -8,11 +8,11 @@
     <section class="bg-spectrum">
       <spectrum-banner class="container-narrow"/>
     </section>
-  </OMGPage>
+  </OMSPage>
 </template>
 
 <script>
-import OMGPage from './shared/OMGPage.vue'
+import OMSPage from './shared/OMSPage.vue'
 
 import CommunityHeader from './pages/community/Header.vue'
 import CommunityRepositories from './pages/community/Repositories.vue'
@@ -22,7 +22,7 @@ import SpectrumBanner from './pages/community/SpectrumBanner.vue'
 export default {
   name: 'Community',
   components: {
-    OMGPage,
+    OMSPage,
     CommunityHeader,
     CommunityRepositories,
     CommunityLibraries,

@@ -24,7 +24,7 @@
       v-if="repoLink"
       secondary 
       arrow 
-      url="https://github.com/microservices/microservice.guide"
+      url="https://github.com/microservices/openmicroservices.org"
       class="repo-link"
     >
       Edit on Github

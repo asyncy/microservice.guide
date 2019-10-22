@@ -1,5 +1,5 @@
 <template>
-  <div class="omg-logo" @click="$emit('logo-clicked')">
+  <div class="oms-logo" @click="$emit('logo-clicked')">
     <div :class="[
       'logo',
       { small },
@@ -7,15 +7,15 @@
     ]" />
     <div v-if="long" class="text">
       <div :class="[`${dark ? 'dark' : light ? 'light' : 'dark'}`]"><span :class="[`${blue ? 'blue' : green ? 'seafoam' : 'blue'}`]">O</span>pen</div>
-      <div :class="[`${dark ? 'dark' : light ? 'light' : 'dark'}`]"><span :class="[`${blue ? 'blue' : green ? 'seafoam' : 'blue'}`]">M</span>icroservice</div>
-      <div :class="[`${dark ? 'dark' : light ? 'light' : 'dark'}`]"><span :class="[`${blue ? 'blue' : green ? 'seafoam' : 'blue'}`]">G</span>uide</div>
+      <div :class="[`${dark ? 'dark' : light ? 'light' : 'dark'}`]"><span :class="[`${blue ? 'blue' : green ? 'seafoam' : 'blue'}`]">M</span>icroservices</div>
+      <div :class="[`${dark ? 'dark' : light ? 'light' : 'dark'}`]"><span :class="[`${blue ? 'blue' : green ? 'seafoam' : 'blue'}`]">S</span>pecification</div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'OMGLogo',
+  name: 'OMSLogo',
   props: {
     long: {
       type: Boolean,
@@ -49,7 +49,7 @@ export default {
 @require '../../styles/palette'
 @require '../../styles/fonts'
 
-.omg-logo
+.oms-logo
   display: flex
   align-items: center
   .logo

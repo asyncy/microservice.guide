@@ -283,6 +283,26 @@ actions:
                 type: string
 ```
 
+Objects may have optional properties:
+
+```yaml{6}
+actions:
+  create:
+    arguments:
+      user:
+        type: object
+        properties:
+          name:
+            type: string
+          location:
+            type: object
+            properties:
+              street:
+                type: string
+                required: false
+              postcode:
+                type: string
+```
 
 ## Output
 
@@ -298,7 +318,7 @@ An `action` **MUST** define it's `output`.
 <p>
 {
     "type": {
-        "desc": "The type of output. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `object`, or `any`"
+        "desc": "The type of output. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `object`, `none`, or `any`"
     },
     "contentType": {
         "desc": "If the `type` is specified as `object`, this **MUST** indicate the Content-Type of the response"
@@ -313,8 +333,8 @@ An `action` **MUST** define it's `output`.
 </p>
 </json-table>
 
-> <small>If there is no output then it must use `output: none` explicitly.
-> `output: none` can also be used if the output should be ignored (e.g. for debug output).
+> <small>If there is no output then it must use `type: none` explicitly.
+> `type: none` can also be used if the output should be ignored (e.g. for debug output).
 > </small>
 
 ### Properties

@@ -5,23 +5,25 @@ sidebar: true
 ---
 # Forwards
 
-To indicate to a cloud provider that traffic from the outside world (the internet)
-MAY be forwarded to certain endpoints of your microservice, a `forwards`
-section MAY be declared. This section MUST appear in the root of the `microservice.yaml`.
+To indicate to a cloud provider that traffic from the outside world (the
+internet) MAY be forwarded to certain endpoints of your microservice, a
+`forwards` section MAY be declared. This section MUST appear in the root of the
+`microservice.yaml`.
 
 Any HTTP traffic coming to this endpoint from an external source (the internet)
 SHOULD be directly proxied to your microservice.
 
 A `forwards` section may be defined as:
+
 ```yaml
-omg: 1
+oms: 1
 lifecycle: ...
 forwards:
   management_ui:
     help: The management interface
     http:
       path: /management_ui
-      port: 8080      
+      port: 8080
   control_interface:
     help: The control interface
     http:
@@ -47,7 +49,8 @@ forwards:
 </json-table>
 
 ## HTTP
-<SBadge type='tip'>forwards.$.http</SBadge>
+
+<SBadge type='tip'>forwards.\$.http</SBadge>
 
 <json-table>
 <p>
@@ -63,4 +66,3 @@ forwards:
 }
 </p>
 </json-table>
-

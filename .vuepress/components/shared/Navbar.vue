@@ -6,7 +6,7 @@
       :to="$localePath"
       class="home-link"
     >
-      <OMGLogo long blue />
+      <OMSLogo long blue />
     </router-link>
 
     <div
@@ -30,7 +30,7 @@ import AlgoliaSearchBox from '@AlgoliaSearchBox'
 import SearchBox from '@SearchBox'
 import SidebarButton from './SidebarButton.vue'
 import NavLinks from './NavLinks.vue'
-import OMGLogo from './OMGLogo.vue'
+import OMSLogo from './OMSLogo.vue'
 
 export default {
   components: {
@@ -38,7 +38,7 @@ export default {
     NavLinks,
     SearchBox,
     AlgoliaSearchBox,
-    OMGLogo
+    OMSLogo
   },
 
   data () {

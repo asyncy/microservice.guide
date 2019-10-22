@@ -1,6 +1,6 @@
 <template>
   <div class="libraries">
-    <h3 class="title">OMG Libraries</h3>
+    <h3 class="title">OMS Libraries</h3>
     <p class="text">
       It can be tedious to write your own microservice.yml so we want to write libraries for all the popular languages so that it all happens automatically. 
       <br>
@@ -13,7 +13,7 @@
       darkShadow
       @click="go()"
     >
-      OMG Repo
+      OMS Repo
     </s-button>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
   },
   methods: {
     go() {
-      window.location.assign('https://github.com/microservices/omg')
+      window.location.assign('https://github.com/microservices/oms')
     }
   }
 }
