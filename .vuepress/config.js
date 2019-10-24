@@ -60,7 +60,8 @@ module.exports = {
           '/cli/overview/',
           '/cli/run/',
           '/cli/validate/',
-          '/cli/build/'
+          '/cli/build/',
+          '/cli/list/'
         ]
       }
     ]
