@@ -61,7 +61,9 @@ module.exports = {
           '/cli/run/',
           '/cli/validate/',
           '/cli/build/',
-          '/cli/list/'
+          '/cli/list/',
+          '/cli/subscribe/',
+          '/cli/ui/'
         ]
       }
     ]
