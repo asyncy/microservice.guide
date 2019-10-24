@@ -6,12 +6,13 @@ sidebar: true
 
 # Validate
 
-When ran in a directory of a microservice (a directory containing a
-`microservice.yml`), validation will be ran against that file.
+When ran in a directory of a microservice (a directory containing a `oms.yml`), validation will be ran against that file.
 
-### Usage
+The `validate` command can very helpful when creating a new OMS-compliant microservice, or instrumenting an existing service.
 
-```shell
+### CLI Interface
+
+```
 Usage: validate [options]
 
 Validate the structure of a `oms.yml` in the current directory
@@ -22,9 +23,9 @@ Options:
   -h, --help   output usage information
 ```
 
-### Examples
+### Example Usage
 
-Enter the following code into the terminal:
+When inside a directory containing an `oms.yml`, you can test the validity of that microservice definition by entering the following code into the terminal:
 
 ```
 oms validate
@@ -36,7 +37,7 @@ The following output appears for a **valid** `oms.yml`:
 No errors
 ```
 
-And the following output appears when the `oms.yml` is **invalid**:
+And an error similar to the following output appears when the `oms.yml` is **invalid**:
 
 ```
 actions.add.arguments.x should have required property 'type'

@@ -4,50 +4,70 @@ home: false
 sidebar: true
 ---
 
-# Test
+# Run
 
-### Run
+When ran in a directory of a microservice (a directory containing a `oms.yml`
+and `Dockerfile`) this command will build the microservice and execute a given
+command.
 
-When ran in a directory of a microservice (a directory containing a
-`microservice.yml` and `Dockerfile`) this command will build the microservice
-and execute a given command.
-
-### Usage
+### Interface
 
 ```
-oms run [options] <action>
+Usage: run [options] <action>
 
-  Options:
+Run actions defined in your `oms.yml`. Must be ran in a directory with a `Dockerfile` and a `oms.yml`
 
-    -i --image <i>  The name of the image to spin up the microservice, if not provided a fresh image will be build based of the `Dockerfile`
-    -a --args <a>   Arguments to be passed to the command, must be of the form `key="val"`
-    -e --envs <e>   Environment variables to be passed to run environment, must be of the form `key="val"`
-    -h, --help      output usage information
+Options:
+  -a --args <a>   Arguments to be passed to the command, must be of the form `key="val"` (default: [])
+  -e --envs <e>   Environment variables to be passed to run environment, must be of the form `key="val"` (default: [])
+  -i --image <i>  The name of the image to spin up the microservice, if not provided a fresh image will be built based off the `Dockerfile`
+  -r --raw        All logging is suppressed expect for the output of the action.
+  -h, --help      output usage information
 ```
 
-#### action
+#### Action
 
 Action is a required argument. The microservice will be executed with the given
 action.
 
-#### [options]
+::: tip &#128214; Read more
+More information about the `actions` field is found [here](/schema/actions/).
+:::
 
-##### Arguments
+#### Options
 
-If a command required arguments they can be passed as follows: `-a key='val'`.
-If required arguments are not given `run` will fail.
+##### `-a --args <a>`
 
-##### Environment variables
-
-If the microservice has any required environment variables they must be passed
-in with the `run` command. Much like Docker, environment variables can be passed
-as follows: `-e FOO='bar'`. If a required environment variable is not supplied
-`run` will fail.
-
-### Example `run` call
+If a command required arguments they can be passed as follows: `-a key='val'`. For example:
 
 ```sh
-oms run -e BOT_TOKEN='xoxb-****' send  -a message='Hello, World!' -a to=CAFAF9C
+oms run send -a message='Hello, World!'
+```
+
+::: warning &#x26A0; Notice
+
+If a required argument is not supplied `run` will fail.
+:::
+
+##### `-e --envs <e>`
+
+Environment variables can be passed to a service as follows: `-e FOO='bar'`. For example:
+
+```sh
+oms run send -e BOT_TOKEN='xoxb-****' -e API_KEY='xoxb-****'
+```
+
+::: warning &#x26A0; Notice
+If a required environment variable is not supplied `run` will fail.
+:::
+
+### Example Usage
+
+```sh
+oms run send \
+  -e BOT_TOKEN='xoxb-****' \
+  -a message='Hello, World!' \
+  -a to="Buddy"
 ```
 
 ```sh
