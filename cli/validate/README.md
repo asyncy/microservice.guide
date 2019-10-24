@@ -10,7 +10,7 @@ When ran in a directory of a microservice (a directory containing a `oms.yml`), 
 
 The `validate` command can very helpful when creating a new OMS-compliant microservice, or instrumenting an existing service.
 
-### CLI Interface
+### Command Line Interface
 
 ```
 Usage: validate [options]
@@ -27,7 +27,7 @@ Options:
 
 When inside a directory containing an `oms.yml`, you can test the validity of that microservice definition by entering the following code into the terminal:
 
-```
+``` sh
 oms validate
 ```
 

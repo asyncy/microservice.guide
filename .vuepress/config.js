@@ -56,7 +56,12 @@ module.exports = {
       {
         title: 'CLI',
         collapsable: false,
-        children: ['/cli/overview/', '/cli/validate/', '/cli/run/']
+        children: [
+          '/cli/overview/',
+          '/cli/run/',
+          '/cli/validate/',
+          '/cli/build/'
+        ]
       }
     ]
   }

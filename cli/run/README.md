@@ -10,7 +10,7 @@ When ran in a directory of a microservice (a directory containing a `oms.yml`
 and `Dockerfile`) this command will build the microservice and execute a given
 command.
 
-### Interface
+### Command Line Interface
 
 ```
 Usage: run [options] <action>
@@ -70,7 +70,7 @@ oms run send \
   -a to="Buddy"
 ```
 
-```sh
+```
 ℹ Building Docker image
 Sending build context to Docker daemon  7.879MB
 Step 1/4 : FROM node:alpine
