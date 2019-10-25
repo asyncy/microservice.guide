@@ -66,8 +66,11 @@ export function resolvePage (pages, rawPath, base) {
         path: ensureExt(rawPath)
       })
     }
+    console.log([path, normalize(pages[i].path)])
   }
-  console.error(`[vuepress] No matching page found for sidebar item "${rawPath}"`)
+  console.error(
+    `[vuepress] No matching page found for sidebar item "${rawPath}"`
+  )
   return {}
 }
 
@@ -112,11 +115,13 @@ function resolvePath (relative, base, append) {
 export function resolveSidebarItems (page, route, site, localePath) {
   const { pages, themeConfig } = site
 
-  const localeConfig = localePath && themeConfig.locales
-    ? themeConfig.locales[localePath] || themeConfig
-    : themeConfig
+  const localeConfig =
+    localePath && themeConfig.locales
+      ? themeConfig.locales[localePath] || themeConfig
+      : themeConfig
 
-  const pageSidebarConfig = page.frontmatter.sidebar || localeConfig.sidebar || themeConfig.sidebar
+  const pageSidebarConfig =
+    page.frontmatter.sidebar || localeConfig.sidebar || themeConfig.sidebar
   if (pageSidebarConfig === 'auto') {
     return resolveHeaders(page)
   }
@@ -126,26 +131,26 @@ export function resolveSidebarItems (page, route, site, localePath) {
     return []
   } else {
     const { base, config } = resolveMatchingConfig(route, sidebarConfig)
-    return config
-      ? config.map(item => resolveItem(item, pages, base))
-      : []
+    return config ? config.map(item => resolveItem(item, pages, base)) : []
   }
 }
 
 function resolveHeaders (page) {
   const headers = groupHeaders(page.headers || [])
-  return [{
-    type: 'group',
-    collapsable: false,
-    title: page.title,
-    children: headers.map(h => ({
-      type: 'auto',
-      title: h.title,
-      basePath: page.path,
-      path: page.path + '#' + h.slug,
-      children: h.children || []
-    }))
-  }]
+  return [
+    {
+      type: 'group',
+      collapsable: false,
+      title: page.title,
+      children: headers.map(h => ({
+        type: 'auto',
+        title: h.title,
+        basePath: page.path,
+        path: page.path + '#' + h.slug,
+        children: h.children || []
+      }))
+    }
+  ]
 }
 
 export function groupHeaders (headers) {
@@ -156,7 +161,7 @@ export function groupHeaders (headers) {
     if (h.level === 2) {
       lastH2 = h
     } else if (lastH2) {
-      (lastH2.children || (lastH2.children = [])).push(h)
+      ;(lastH2.children || (lastH2.children = [])).push(h)
     }
   })
   return headers.filter(h => h.level === 2)
@@ -187,9 +192,7 @@ export function resolveMatchingConfig (route, config) {
 }
 
 function ensureEndingSlash (path) {
-  return /(\.html|\/)$/.test(path)
-    ? path
-    : path + '/'
+  return /(\.html|\/)$/.test(path) ? path : path + '/'
 }
 
 function resolveItem (item, pages, base, isNested) {
@@ -203,7 +206,7 @@ function resolveItem (item, pages, base, isNested) {
     if (isNested) {
       console.error(
         '[vuepress] Nested sidebar groups are not supported. ' +
-        'Consider using navbar + categories instead.'
+          'Consider using navbar + categories instead.'
       )
     }
     const children = item.children || []
