@@ -6,7 +6,7 @@ sidebar: true
 
 # UI
 
-::: danger &#x26A0; HERE BE EXPERIMENTAL DRAGONS
+::: danger &#x1f409; HERE BE EXPERIMENTAL DRAGONS
 The `oms ui` feature is new and under active development. Documentation here is extremely limited and unreliable at best.
 :::
 
