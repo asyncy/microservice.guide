@@ -66,7 +66,6 @@ export function resolvePage (pages, rawPath, base) {
         path: ensureExt(rawPath)
       })
     }
-    console.log([path, normalize(pages[i].path)])
   }
   console.error(
     `[vuepress] No matching page found for sidebar item "${rawPath}"`
