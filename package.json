@@ -4,8 +4,8 @@
   "description": "A guide to designing platform-agnostic microservices that are highly reusable.",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev",
-    "build": "vuepress build"
+    "dev": "vuepress dev app",
+    "build": "vuepress build app -p 8080 -h 0.0.0.0"
   },
   "repository": {
     "type": "git",
