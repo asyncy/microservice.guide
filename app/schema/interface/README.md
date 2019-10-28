@@ -12,7 +12,7 @@ each action **MUST** provide an interface for it to be executed:
 
 ## HTTP
 
-<SBadge text="actions.$.http" type="info"/>
+<Badge text="actions.$.http" type="info"/>
 
 An `action` **MAY** use the HTTP protocol to execute it's function.
 
@@ -96,7 +96,8 @@ actions:
       path: /fetch_usd/{currency}
 ```
 
-<SBadge>actions.$.arguments.$</SBadge>
+<Badge text="actions.$.arguments.$.in" type="tip"/>
+
 In addition to the fields documented [here](/schema/actions/#arguments), the following fields are required for
 interfacing via HTTP:
 
@@ -143,7 +144,7 @@ $ curl -X POST http://service:8080/path -H "Content-Type: application/json" -d '
 
 ## Command
 
-<SBadge text="actions.$.format" type="info"/>
+<Badge text="actions.$.format" type="info"/>
 
 If the container provider is Docker, then `docker exec` is used:
 
@@ -220,7 +221,7 @@ $ docker run --rm alpine /app/count.sh '{"word": "hello"}'
 
 ## RPC
 
-<SBadge text="actions.$.rpc" type="info"/>
+<Badge text="actions.$.rpc" type="info"/>
 
 The Service **MAY** communicate via RPC.
 
@@ -243,4 +244,3 @@ rpc:
 ::: tip 💡 Heads up!
 TLS configuration is defined separately. See the [authentication](/schema/authentication) section for details.
 :::
-
