@@ -1,5 +1,5 @@
 *.DS_STORE
-.vuepress/dist/
+app/.vuepress/dist/
 .idea/
 node_modules/
 .vscode/
