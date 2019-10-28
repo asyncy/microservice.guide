@@ -17,10 +17,9 @@
   },
   "homepage": "https://github.com/microservices/openmicroservices.org#readme",
   "devDependencies": {
-    "vuepress": "1.2.0"
+    "esm": "3.2.25",
+    "vuepress": "1.2.0",
+    "vuepress-plugin-sitemap": "2.3.0"
   },
-  "dependencies": {
-    "esm": "^3.2.25",
-    "vuepress-plugin-sitemap": "^2.3.0"
-  }
+  "dependencies": {}
 }
