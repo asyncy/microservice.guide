@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/microservices/openmicroservices.org">
-    <img width="200" height="200" src="https://github.com/microservices/openmicroservices.org/raw/master/.vuepress/public/assets/img/logo.svg" />
+    <img width="200" height="200" src="https://raw.githack.com/microservices/openmicroservices.org/master/app/.vuepress/public/assets/img/logo.svg" />
   </a>
   <br>
   <br>
