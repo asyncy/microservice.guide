@@ -29,7 +29,7 @@
 
 All suggestions in how to improve the specification and this guide are very welcome. Feel free share your thoughts in the Issue tracker, or even better, fork the repository to implement your own ideas and submit a pull request.
 
-This project is guided by [Contributor Covenant](https://github.com/.github/blob/master/CODE_OF_CONDUCT.md). Please read out full [Contribution Guidelines](https://github.com/.github/blob/master/CONTRIBUTING.md).
+This project is guided by [Contributor Covenant](https://github.com/microservices/.github/blob/master/CODE_OF_CONDUCT.md). Please read out full [Contribution Guidelines](https://github.com/microservices/.github/blob/master/CONTRIBUTING.md).
 
 ## Additional Resources
 
