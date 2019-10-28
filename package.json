@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev app",
-    "build": "vuepress build app -p 8080 -h 0.0.0.0"
+    "build": "vuepress build app"
   },
   "repository": {
     "type": "git",
