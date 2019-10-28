@@ -6,7 +6,7 @@ sidebar: true
 
 # Anatomy
 
-Here's a sample `microservice.yml` file:
+Here's a sample `oms.yml` file:
 
 ```yaml
 oms: 1

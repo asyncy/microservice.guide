@@ -8,7 +8,7 @@ sidebar: true
 To indicate to a cloud provider that traffic from the outside world (the
 internet) MAY be forwarded to certain endpoints of your microservice, a
 `forwards` section MAY be declared. This section MUST appear in the root of the
-`microservice.yaml`.
+`oms.yaml`.
 
 Any HTTP traffic coming to this endpoint from an external source (the internet)
 SHOULD be directly proxied to your microservice.

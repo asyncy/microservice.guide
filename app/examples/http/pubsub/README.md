@@ -10,7 +10,7 @@ In this example, let's build a simple pub/sub service.
 
 ## Handling event subscription
 
-In microservice.yml:
+In `oms.yml`:
 
 ```yaml
 version: 1

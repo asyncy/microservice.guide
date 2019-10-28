@@ -69,7 +69,7 @@ meta: {
 ## Prometheus Exporter
 
 Your service **MAY** expose metrics via Prometheus Exporter. Provide the
-location of where to retrieve these metrics in your `microservice.yml`.
+location of where to retrieve these metrics in your `oms.yml`.
 
 ```yaml
 metrics:
@@ -86,7 +86,7 @@ to understand how to write an exporter
 <!--
 # Details
 
-The service **MAY** provide additional details about metrics in the `microservice.yml` assist end users in understanding the metrics.
+The service **MAY** provide additional details about metrics in the `oms.yml` assist end users in understanding the metrics.
 
 ```yaml
 metrics:

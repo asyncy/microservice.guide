@@ -61,7 +61,7 @@ ab
 
 ## POST Example
 
-Using the same example above, here's a sample of the `microservice.yaml` for
+Using the same example above, here's a sample of the `oms.yaml` for
 having the `left` and `right` arguments in the request body of a POST request.
 
 The lines changed have been highlighted for your convenience below:

@@ -43,7 +43,7 @@ export default {
         desc: 'Free to choose any communication interface.'
       }, {
         title: 'Documentation',
-        desc: 'Automatically generated and actionable through the microservice.yml.'
+        desc: 'Automatically generated and actionable through the `oms.yml`.'
       }, {
         title: 'Declarative',
         desc: 'List all actions the service can perform, including the arguments and the output.'

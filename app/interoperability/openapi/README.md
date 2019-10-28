@@ -7,7 +7,7 @@ sidebar: true
 
 The [`openapi2oms`](https://github.com/microservices/openapi2oms) tool helps
 convert an OpenAPI spec to the Open Microservice Specification. To do so, it
-adds the following fields in the root of the generated `microservice.yaml`:
+adds the following fields in the root of the generated `oms.yaml`:
 
 ```yaml
 source: openapi
