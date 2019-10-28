@@ -4,18 +4,18 @@
   </a>
   <br>
   <br>
-	<a href="https://spectrum.chat/open-microservices">
-		<img src="https://withspectrum.github.io/badge/badge.svg">
-	</a>
-	<a href="https://github.com/.github/blob/master/CODE_OF_CONDUCT.md">
-		<img src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg">
-	</a>
-	<a href="http://commitizen.github.io/cz-cli/">
-		<img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
-	</a>
-	<a href="https://renovatebot.com/">
-		<img src="https://badges.renovateapi.com/github/microservices/openmicroservices.org">
-	</a>
+  <a href="https://spectrum.chat/open-microservices">
+    <img src="https://withspectrum.github.io/badge/badge.svg">
+  </a>
+  <a href="https://github.com/.github/blob/master/CODE_OF_CONDUCT.md">
+    <img src="https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg">
+  </a>
+  <a href="http://commitizen.github.io/cz-cli/">
+    <img src="https://img.shields.io/badge/commitizen-friendly-brightgreen.svg">
+  </a>
+  <a href="https://renovatebot.com/">
+    <img src="https://badges.renovateapi.com/github/microservices/openmicroservices.org">
+  </a>
   <h1>openmicroservices.org</h1>
   <p>
     This is the website for the Open Microservices Specification, a standard for building highly-portable microservices originally created at <a href="https://storyscript.io/">Storyscript</a> for describing and exposing the capabilities the events, actions, and APIs inside containerized software.
