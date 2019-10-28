@@ -67,5 +67,10 @@ module.exports = {
         ]
       }
     ]
+  },
+  plugins: {
+    sitemap: {
+      hostname: 'https://openmicroservices.org'
+    }
   }
 }
