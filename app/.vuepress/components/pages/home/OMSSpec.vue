@@ -1,9 +1,9 @@
 <template>
   <div class="oms-spec">
-    <h2 class="title">OMS Spec</h2>
+    <h2 class="title">Open Microservice Specification</h2>
     <div class="content">
-      <h2 class="title">OMS</h2>
-      <div class="text">A specification to write highly reusable self-documenting microservices.</div>
+      <h2 class="title">Open Microservice Specification</h2>
+      <div class="text">An open standard for writing highly reusable self-documenting microservices.</div>
       <s-button
         secondary
         arrow

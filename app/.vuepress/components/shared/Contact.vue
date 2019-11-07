@@ -15,7 +15,7 @@
         @click="go('contribute')"
         class="contribute"
       >
-        Contribute to OMS
+        Contribute on GitHub
       </s-button>
       <s-button
         primary
@@ -23,7 +23,7 @@
         @click="go('spectrum')"
         class="spectrum"
       >
-        Join OMS on Spectrum
+        Chat with us on Spectrum
       </s-button>
     </div>
     <!--

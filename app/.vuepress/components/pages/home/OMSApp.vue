@@ -1,19 +1,19 @@
 <template>
   <div class="oms-app">
-    <h2 class="title">Test your microservice with OMS</h2>
+    <h2 class="title">Test with the OMS App</h2>
     <div class="illustration">
       <img src="/assets/img/oms-app.png" alt="OMS App design" >
     </div>
     <div class="content">
-      <h2 class="title">Test your microservice with OMS</h2>
-      <div class="text">The open standard for reuse active we welcome your input and contributions in GitHub.</div>
+      <h2 class="title">Build &amp; Test with OMS App</h2>
+      <div class="text">Bundled with the official CLI, the OMS App is your handy tool for building, testing, and validating Open Microservices.</div>
       <s-button
         secondary
         arrow
         darkShadow
         @click="go()"
       >
-        View on GitHub
+        Get started on GitHub
       </s-button>
     </div>
   </div>
@@ -58,8 +58,6 @@ export default {
       padding initial
       text-align left
       display none
-  .title
-    text-transform capitalize
   .illustration
     padding: 0
     background none

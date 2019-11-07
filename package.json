@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/microservices/openmicroservices.org.git"
   },
-  "author": "",
+  "author": "Open Microservices <core@openmicroservices.org>",
   "bugs": {
     "url": "https://github.com/microservices/openmicroservices.org/issues"
   },
