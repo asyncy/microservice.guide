@@ -93,6 +93,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://tomped.com"><img src="https://avatars1.githubusercontent.com/u/11602092?v=4" width="100px;" alt="Thomas Pedbereznak"/><br /><sub><b>Thomas Pedbereznak</b></sub></a><br /><a href="#content-TomPed" title="Content">🖋</a> <a href="https://github.com/microservices/openmicroservices.org/commits?author=TomPed" title="Code">💻</a></td>
     <td align="center"><a href="https://anukul.js.org/"><img src="https://avatars1.githubusercontent.com/u/44864521?v=4" width="100px;" alt="Anukul Sangwan"/><br /><sub><b>Anukul Sangwan</b></sub></a><br /><a href="https://github.com/microservices/openmicroservices.org/commits?author=anukul" title="Code">💻</a></td>
     <td align="center"><a href="https://www.deadpointrecords.com"><img src="https://avatars2.githubusercontent.com/u/35897226?v=4" width="100px;" alt="Topi Kettunen"/><br /><sub><b>Topi Kettunen</b></sub></a><br /><a href="https://github.com/microservices/openmicroservices.org/commits?author=topikettunen" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Bjane658"><img src="https://avatars0.githubusercontent.com/u/21987316?v=4" width="100px;" alt="Bjane"/><br /><sub><b>Bjane</b></sub></a><br /><a href="https://github.com/microservices/openmicroservices.org/commits?author=Bjane658" title="Code">💻</a></td>
   </tr>
 </table>
 
