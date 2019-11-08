@@ -80,8 +80,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="http://hudson.dev"><img src="https://avatars2.githubusercontent.com/u/320194?v=4" width="100px;" alt="Matthew Hudson"/><br /><sub><b>Matthew Hudson</b></sub></a><br /><a href="https://github.com/microservices/openmicroservices.org/commits?author=matthewhudson" title="Code">ðŸ’»</a> <a href="#maintenance-matthewhudson" title="Maintenance">ðŸš§</a></td>
-    <td align="center"><a href="https://seb.wilzba.ch"><img src="https://avatars3.githubusercontent.com/u/4370550?v=4" width="100px;" alt="Sebastian Wilzbach"/><br /><sub><b>Sebastian Wilzbach</b></sub></a><br /><a href="https://github.com/microservices/openmicroservices.org/commits?author=wilzbach" title="Code">ðŸ’»</a> <a href="#maintenance-wilzbach" title="Maintenance">ðŸš§</a></td>
+    <td align="center"><a href="http://hudson.dev"><img src="https://avatars2.githubusercontent.com/u/320194?v=4" width="100px;" alt="Matthew Hudson"/><br /><sub><b>Matthew Hudson</b></sub></a><br /><a href="https://github.com/microservices/openmicroservices.org/commits?author=matthewhudson" title="Code">💻</a> <a href="#maintenance-matthewhudson" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://seb.wilzba.ch"><img src="https://avatars3.githubusercontent.com/u/4370550?v=4" width="100px;" alt="Sebastian Wilzbach"/><br /><sub><b>Sebastian Wilzbach</b></sub></a><br /><a href="#content-wilzbach" title="Content">🖋</a> <a href="#ideas-wilzbach" title="Ideas, Planning, & Feedback">🤔</a></td>
+    <td align="center"><a href="https://github.com/Arinono"><img src="https://avatars2.githubusercontent.com/u/10957531?v=4" width="100px;" alt="Aurélien ARINO"/><br /><sub><b>Aurélien ARINO</b></sub></a><br /><a href="#content-Arinono" title="Content">🖋</a> <a href="https://github.com/microservices/openmicroservices.org/commits?author=Arinono" title="Code">💻</a> <a href="#ideas-Arinono" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
