@@ -57,6 +57,17 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "stevepeak",
+      "name": "Steve Peak",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/2041757?v=4",
+      "profile": "https://stevepeak.net",
+      "contributions": [
+        "content",
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
