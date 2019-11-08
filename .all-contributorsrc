@@ -14,6 +14,16 @@
         "code",
         "maintenance"
       ]
+    },
+    {
+      "login": "wilzbach",
+      "name": "Sebastian Wilzbach",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/4370550?v=4",
+      "profile": "https://seb.wilzba.ch",
+      "contributions": [
+        "content",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
