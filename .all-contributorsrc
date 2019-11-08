@@ -46,6 +46,17 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "judepereira",
+      "name": "Jude Pereira",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/747087?v=4",
+      "profile": "https://judepereira.com/",
+      "contributions": [
+        "content",
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
