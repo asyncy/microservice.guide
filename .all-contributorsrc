@@ -90,6 +90,16 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "TomPed",
+      "name": "Thomas Pedbereznak",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/11602092?v=4",
+      "profile": "http://tomped.com",
+      "contributions": [
+        "content",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
