@@ -1,16 +1,24 @@
 {
-  "files": [".github/README.md"],
+  "files": [
+    ".github/README.md"
+  ],
   "imageSize": 100,
-  "contributorsPerLine": 7,
-  "badgeTemplate": "[![All Contributors](https://img.shields.io/badge/all_contributors-<%= contributors.length %>-orange.svg?style=flat-square)](#contributors)",
-  "contributorTemplate": "<%= avatarBlock %><br /><%= contributions %>",
-  "types": {
-    "custom": {
-      "symbol": "🔭",
-      "description": "A custom contribution type.",
-      "link": "[<%= symbol %>](<%= url %> \"<%= description %>\"),"
+  "commit": false,
+  "contributors": [
+    {
+      "login": "matthewhudson",
+      "name": "Matthew Hudson",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/320194?v=4",
+      "profile": "http://hudson.dev",
+      "contributions": [
+        "code",
+        "maintenance"
+      ]
     }
-  },
-  "skipCi": "true",
-  "contributors": []
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "openmicroservices.org",
+  "projectOwner": "microservices",
+  "repoType": "github",
+  "repoHost": "https://github.com"
 }
