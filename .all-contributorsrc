@@ -68,6 +68,17 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "joshpollara",
+      "name": "Josh Pollara",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/75546?v=4",
+      "profile": "https://github.com/joshpollara",
+      "contributions": [
+        "content",
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
