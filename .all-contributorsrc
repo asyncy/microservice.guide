@@ -109,6 +109,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "topikettunen",
+      "name": "Topi Kettunen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/35897226?v=4",
+      "profile": "https://www.deadpointrecords.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
