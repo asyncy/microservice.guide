@@ -35,6 +35,17 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "JeanBarriere",
+      "name": "Jean Barrière",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/11390722?v=4",
+      "profile": "http://jean.barriere.io",
+      "contributions": [
+        "content",
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
