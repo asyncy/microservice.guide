@@ -88,6 +88,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://stevepeak.net"><img src="https://avatars1.githubusercontent.com/u/2041757?v=4" width="100px;" alt="Steve Peak"/><br /><sub><b>Steve Peak</b></sub></a><br /><a href="#content-stevepeak" title="Content">🖋</a> <a href="https://github.com/microservices/openmicroservices.org/commits?author=stevepeak" title="Code">💻</a> <a href="#ideas-stevepeak" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="https://github.com/joshpollara"><img src="https://avatars2.githubusercontent.com/u/75546?v=4" width="100px;" alt="Josh Pollara"/><br /><sub><b>Josh Pollara</b></sub></a><br /><a href="#content-joshpollara" title="Content">🖋</a> <a href="https://github.com/microservices/openmicroservices.org/commits?author=joshpollara" title="Code">💻</a> <a href="#ideas-joshpollara" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://www.kennethreitz.org/values"><img src="https://avatars2.githubusercontent.com/u/119893?v=4" width="100px;" alt="☿ Kenneth Reitz"/><br /><sub><b>☿ Kenneth Reitz</b></sub></a><br /><a href="#content-kennethreitz" title="Content">🖋</a> <a href="https://github.com/microservices/openmicroservices.org/commits?author=kennethreitz" title="Code">💻</a> <a href="#ideas-kennethreitz" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
 </table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
