@@ -79,6 +79,17 @@
         "code",
         "ideas"
       ]
+    },
+    {
+      "login": "kennethreitz",
+      "name": "☿ Kenneth Reitz",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/119893?v=4",
+      "profile": "https://www.kennethreitz.org/values",
+      "contributions": [
+        "content",
+        "code",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
