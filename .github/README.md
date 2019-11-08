@@ -91,6 +91,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://www.kennethreitz.org/values"><img src="https://avatars2.githubusercontent.com/u/119893?v=4" width="100px;" alt="☿ Kenneth Reitz"/><br /><sub><b>☿ Kenneth Reitz</b></sub></a><br /><a href="#content-kennethreitz" title="Content">🖋</a> <a href="https://github.com/microservices/openmicroservices.org/commits?author=kennethreitz" title="Code">💻</a> <a href="#ideas-kennethreitz" title="Ideas, Planning, & Feedback">🤔</a></td>
     <td align="center"><a href="http://tomped.com"><img src="https://avatars1.githubusercontent.com/u/11602092?v=4" width="100px;" alt="Thomas Pedbereznak"/><br /><sub><b>Thomas Pedbereznak</b></sub></a><br /><a href="#content-TomPed" title="Content">🖋</a> <a href="https://github.com/microservices/openmicroservices.org/commits?author=TomPed" title="Code">💻</a></td>
+    <td align="center"><a href="https://anukul.js.org/"><img src="https://avatars1.githubusercontent.com/u/44864521?v=4" width="100px;" alt="Anukul Sangwan"/><br /><sub><b>Anukul Sangwan</b></sub></a><br /><a href="https://github.com/microservices/openmicroservices.org/commits?author=anukul" title="Code">💻</a></td>
   </tr>
 </table>
 
