@@ -53,7 +53,7 @@ export default {
   display: flex
   align-items: center
   .logo
-    background-image url(/assets/img/logo-dark.svg)
+    background-image url(/assets/img/logo.svg)
     background-repeat no-repeat
     background-size contain
     width 2.75rem
