@@ -74,7 +74,8 @@ module.exports = {
     },
     autometa: {
       site: {
-        name   : 'Open Microservice Specification',
+        name: 'Open Microservice Specification',
+        twitter: 'omspec'
       },
       canonical_base: 'https://openmicroservices.org'
     }
