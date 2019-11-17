@@ -9,6 +9,8 @@ tags:
   - open source
   - container specification
 
+image: /assets/img/illustrations/services.svg
+
 ---
 
 ```yaml
