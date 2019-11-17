@@ -1,6 +1,14 @@
 ---
 layout: Home
 home: true
+
+tags:
+  - oms
+  - open microservice specification
+  - standard
+  - open source
+  - container specification
+
 ---
 
 ```yaml

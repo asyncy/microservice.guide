@@ -71,6 +71,12 @@ module.exports = {
   plugins: {
     sitemap: {
       hostname: 'https://openmicroservices.org'
+    },
+    autometa: {
+      site: {
+        name   : 'Open Microservice Specification',
+      },
+      canonical_base: 'https://openmicroservices.org'
     }
   }
 }
