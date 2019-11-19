@@ -158,7 +158,7 @@
         .name
           font-family DM Sans 
           font-size 1rem
-          color #5675a0
+          color #455e82
           padding-left 2.75rem
           min-width calc(20% - 2.75rem)
           align-items center
@@ -266,7 +266,7 @@
             padding-left 1rem
             font-family DM Sans
             font-size .875rem
-            color #5675A0
+            color #455e82
           .value
             flex-basis 65%
             font-family DM Sans
