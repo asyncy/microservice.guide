@@ -10,7 +10,7 @@
           `${partner}`
         ]"
       >
-        <img :src="`/assets/img/partners/${partner}.png`" :alt="`${partner} logo`">
+        <img :src="`/assets/img/partners/${partner}.png`" :alt="`${partner} logo`" loading="lazy">
       </div>
     </div>
   </div>  

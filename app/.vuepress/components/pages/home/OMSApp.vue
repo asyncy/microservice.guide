@@ -2,7 +2,7 @@
   <div class="oms-app">
     <h2 class="title">Test with the OMS App</h2>
     <div class="illustration">
-      <img src="/assets/img/oms-app.png" alt="OMS App design" >
+      <img src="/assets/img/oms-app.png" loading="lazy" alt="OMS App design" >
     </div>
     <div class="content">
       <h2 class="title">Build &amp; Test with OMS App</h2>
