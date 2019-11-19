@@ -1,4 +1,1 @@
-<svg width="61" height="30" viewBox="0 0 61 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M52.96 1L59.455 4.40465L55.6947 9.11877" stroke="#599AF2" stroke-width="1.62375" stroke-linecap="round"/>
-<path d="M1 28.6034C5.41635 23.2689 16.6897 12.8964 26.4521 14.0818C38.6552 15.5636 33.4253 28.0107 26.4521 24.7507C19.4789 21.4908 33.4253 3.11652 57.8314 4.30196" stroke="#599AF2" stroke-width="1.62375" stroke-linecap="round" stroke-dasharray="3.25 3.25"/>
-</svg>
+<svg fill="none" height="30" viewBox="0 0 61 30" width="61" xmlns="http://www.w3.org/2000/svg"><g stroke="#599af2" stroke-linecap="round" stroke-width="1.62375"><path d="m52.96 1 6.495 3.40465-3.7603 4.71412"/><path d="m1 28.6034c4.41635-5.3345 15.6897-15.707 25.4521-14.5216 12.2031 1.4818 6.9732 13.9289 0 10.6689-6.9732-3.2599 6.9732-21.63418 31.3793-20.44874" stroke-dasharray="3.25 3.25"/></g></svg>
