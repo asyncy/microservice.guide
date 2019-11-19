@@ -3,6 +3,7 @@
     :to="to"
     :href="url"
     :target="url ? '_blank': ''"
+    rel="noopener"
     :class="[
       'btn',
       { primary },

@@ -10,7 +10,7 @@
     :href="link"
     class="nav-link external"
     :target="isMailto(link) || isTel(link) ? null : '_blank'"
-    :rel="isMailto(link) || isTel(link) ? null : 'noopener noreferrer'"
+    :rel="isMailto(link) || isTel(link) ? null : 'noopener'"
   >
     <svg
       v-if="link.includes('github')"
