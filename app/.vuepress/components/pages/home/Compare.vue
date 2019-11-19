@@ -53,7 +53,11 @@
     <div class="table-mobile">
       <div class="selectors">
         <div class="selector" v-for="(l, idx) in logos" :class="{'active': selected === l.name}" @click="selected = l.name">
-          <img :src="`assets/img/${l.src}`" :alt="`${l.name} logo`">
+          <img 
+            :src="`assets/img/${l.src}`" 
+            :alt="`${l.name} logo`" 
+            loading="lazy"
+          />
         </div>
       </div>
       <div class="content">
@@ -167,7 +171,7 @@
           flex-basis 20%
           text-align center
           font-family DM Sans
-          font-size 1.125rem
+          font-size 1rem
           color black
           &.border-l
             border-left 1px solid #C5DCFC

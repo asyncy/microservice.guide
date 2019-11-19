@@ -16,7 +16,7 @@
         </p>
       </div>
       <div class="illustration">
-        <img src="/assets/img/illustrations/community.svg" alt="man in front of his computer illustration" />
+        <img src="/assets/img/illustrations/community.svg" loading="eager" alt="man in front of his computer illustration" />
       </div>
     </div>
     <s-button 

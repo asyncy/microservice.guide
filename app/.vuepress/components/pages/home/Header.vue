@@ -39,13 +39,13 @@
 
       <div class="col bigoudi">
         <div class="illustration">
-          <img src="/assets/img/illustrations/pigtail-arrow-2.svg" alt="pigtail like arrow illustration">
+          <img src="/assets/img/illustrations/pigtail-arrow-2.svg" loading="eager" alt="pigtail like arrow illustration">
         </div>
       </div>
 
       <div class="col">
         <div class="illustration">
-          <img src="/assets/img/illustrations/app.svg" alt="OMS Application illustration">
+          <img src="/assets/img/illustrations/app.svg" loading="eager" alt="OMS Application illustration">
         </div>
         <div class="content">
           <h4 class="title">Run anywhere</h4>
