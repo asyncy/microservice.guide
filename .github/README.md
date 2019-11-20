@@ -101,6 +101,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/aydaoz"><img src="https://avatars0.githubusercontent.com/u/47315310?v=4" width="100px;" alt="aydaoz"/><br /><sub><b>aydaoz</b></sub></a><br /><a href="#design-aydaoz" title="Design">🎨</a></td>
+    <td align="center"><a href="https://twitter.com/#!/lucperkins"><img src="https://avatars2.githubusercontent.com/u/1523104?v=4" width="100px;" alt="Luc Perkins"/><br /><sub><b>Luc Perkins</b></sub></a><br /><a href="#ideas-lucperkins" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
