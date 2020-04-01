@@ -3,7 +3,7 @@ https://microservices.guide/* https://openmicroservices.org/:splat 301!
 https://microservice.guide/* https://openmicroservices.org/:splat 301!
 
 # Redirect old introduction structure to the new one
-/cli /cli/overview
-/overview /introduction/overview
-/overview/comparisons/openapi /introduction/comparisons/openapi
-/overview/anatomy /introduction/anatomy
+/cli /cli/overview 301!
+/overview /introduction/overview 301!
+/overview/comparisons/openapi /introduction/comparisons/openapi 301!
+/overview/anatomy /introduction/anatomy 301!
