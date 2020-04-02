@@ -97,7 +97,7 @@ An `action` **MUST** declare all arguments it accepts. Each argument, will have 
         "desc": "A short description of the argument which can provide clarity to end user."
     },
     "type": {
-        "desc": "The type of this argument. It must be one of `object`, `int`, `float`, `string`, `list`, `map`, `boolean`, `enum`, or `any`",
+        "desc": "The type of this argument. It must be one of `object`, `int`, `float`, `string`, `list`, `map`, `boolean`, `enum`, `date`, `duration`, `regex`, or `any`",
         "required": true
     },
     "properties": {
@@ -173,6 +173,29 @@ actions:
         type: string
         pattern: '^\#?\w{6}$'
 ```
+
+### Date
+
+A `date` must be represented as an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) timestamp.
+Refer to [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) for implementation details.
+
+Examples: `2020-09-09T10:20:30Z`, `2020-09-09T10:20:30.000Z`, `2020-09-09T10:20:30+00:00`.
+
+### Duration
+
+A `duration` must be represented as an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) duration.
+
+Examples: `P1Y2M3DT4H5M6S`, `2h40.000s`, `10d30m`.
+
+::: tip Internal representation
+To avoid a loss of precision, store a duration as three values: months (integer), days (integer) and seconds (floating-point)
+:::
+
+### Regular expression
+
+A `regex` must be encoded as its string representation.
+
+Examples: `/text/`, `/a(b|c)?/i`, or `/a.*b+/`.
 
 ### Enums
 
@@ -344,7 +367,7 @@ An `action` **MUST** define it's `output`.
 <p>
 {
     "type": {
-        "desc": "The type of output. It must be one of `int`, `float`, `string`, `list`, `map`, `boolean`, `object`, `none`, or `any`"
+        "desc": "The type of output. It must be one of `object`, `int`, `float`, `string`, `list`, `map`, `boolean`, `enum`, `date`, `duration`, `regex`, `none`, or `any`"
     },
     "contentType": {
         "desc": "If the `type` is specified as `object`, this **MUST** indicate the Content-Type of the response"
