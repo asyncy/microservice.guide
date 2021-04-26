@@ -18,7 +18,7 @@
   "homepage": "https://github.com/microservices/openmicroservices.org#readme",
   "devDependencies": {
     "esm": "3.2.25",
-    "vuepress": "1.2.0",
+    "vuepress": "1.8.2",
     "vuepress-plugin-autometa": "0.1.13",
     "vuepress-plugin-sitemap": "2.3.1"
   },
